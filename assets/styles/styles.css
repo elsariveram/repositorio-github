@@ -1,0 +1,445 @@
+  /* -----FUENTES -----*/
+    /* FUENTE LOGO */
+            @font-face {
+                font-family: fuente-logo;
+                src: url(../fonts/Henny_Penny/HennyPenny-Regular.ttf);
+            }
+        /* FUENTE quicksand */
+            @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        /* FUENTE copyright */
+                @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+        /* FUENTE ARTICULOS */
+                @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /* FUENTE JUEGO */
+                @font-face {
+                font-family: fuente-juego;
+                src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+        }
+    /*ESTILOS DE BODY*/
+        body {
+            background-color: #F5F2F2;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+    /* ESTILOS HEADER*/
+        header {
+            background-color: #1FC1CB;
+
+        }
+    /* ESTILO MENUS */
+        .clase-menus {
+            color: #E9E8E8;
+            font-size: 32px;
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            list-style-type: none;
+            
+            
+        }
+                /* estilo Logo */
+            .logo-header-class {
+            font-size: 44px;
+            text-decoration:none;
+            color: white;
+            font-family: "fuente-logo";
+
+        }
+            .logo-header-class span {
+            font-size: 15px;
+        }
+        /* ESTILOS FOOTER*/
+        footer {
+            background-color: #1FC1CB;
+        }
+
+    /* ESTILO links footer*/
+        .clase-links-footer {
+            color: #E9E8E8;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+        }
+    /* Estilo logo gatino footer */
+        .clase-logo-gatino {
+            width: 178px;
+        }
+    /* Estilo icpnos RRSS footer */
+        .clase-iconos {
+            width: 30px;
+        }
+
+    /* estilo copyright footer*/
+        footer h5 {
+            font-weight: 300;
+            color: #E9E8E8;
+            font-size: 18px;
+            text-decoration: none;
+            font-family: 'Alegreya Sans', 'Quicksand', sans-serif;
+        }
+    /* estilo hecho en Chile*/
+        footer p {
+            color: #E9E8E8;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+    /* ---PORTADA INDEX----*/
+        /* imagen fondo */
+            .fondo-portada {
+                background-image: url(../img/portada-1.png);
+                background-size: 100%;
+                background-position: center center;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+        /* logo h1 */
+                h1 {
+                    font-weight: 100;
+                    text-align: center;
+                    font-size: 100px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: "fuente-logo";
+                }
+                h1 span {
+                    font-size: 33.3px;
+                }
+        /* subt h2 */
+                h2 {
+                    font-weight: 100;
+                    text-align: center;
+                    font-size: 50px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: "fuente-logo";
+                }
+        /* subt h3 */
+                h3 {
+                    font-weight: 400;
+                    text-align: center;
+                    font-size: 31px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: 'Quicksand', sans-serif;
+                }
+
+    /* Boton tienda */
+                .boton-tienda {
+                    display: inline-block;
+                    font-family: 'Quicksand', sans-serif;
+                    color: white;
+                    font-size: 48px;
+                    font-weight: 500;
+                    letter-spacing: 0.2rem;
+                    background-color: #6567C9;
+                    text-decoration: none;
+                }
+
+    /* SECCION ARTICULOS INDEX*/
+
+    /* Articulos, IMAGENES */
+        .tamaño-img-art-home {
+            width: 386px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+    /* Articulos, TEXTO */
+        .texto-articulos{
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #757575;
+            text-align: left;
+        } 
+
+    /*--------------- CSS TIENDA --------------*/
+
+        /* PORTADA TIENDA */
+
+            .portada-tienda {
+                background-image: url(../img/fondo-madera.png);
+                background-size: 100%;
+                background-position: center center;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+
+        /*  h1 TIENDA */
+            .portada-tienda h1 {
+                font-weight: 700;
+                text-align: right;
+                font-size: 50px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 0.2rem;
+            }
+         /* subt h2 TIENDA*/
+            .portada-tienda h2 {
+            font-weight: 400;
+            text-align: right;
+            font-size: 24px;
+            text-decoration:none;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1rem;
+             }
+            .portada-tienda img {
+                width: 457px;
+            }
+
+        /* Boton tienda -TIENDA */
+            .portada-tienda-boton {
+                display: inline-block;
+                font-family: 'Quicksand', sans-serif;
+                color: #757575;
+                font-size: 48px;
+                font-weight: 500;
+                letter-spacing: 0.2rem;
+                background-color: #FBE405;
+                text-decoration: none;
+            }
+            .portada-tienda h3 {
+                font-weight: 400;
+                text-align: right;
+                font-size: 16px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 0.1rem;
+            }
+        /* IMG ARTICULOS -TIENDA */
+            .tamaño-img-art-tienda {
+                width: 386px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+
+
+    /*--------------- CSS HISTORIA --------------*/
+        
+        /* -----PORTADA HISTORIA----- */
+                .portada-historia {
+                    background-image: url(../img/fondo-azul.png);
+                    background-size: 100%;
+                    background-position: center center;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                }
+            
+            /*  h1 historia */
+                .portada-historia h1 {
+                    font-weight: 400;
+                    text-align: right;
+                    font-size: 50px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: 'Playfair Display', serif;
+                    letter-spacing: 0.2rem;
+                }
+        
+                /* subt h2 historia*/
+                    .portada-historia h2 {
+                    font-weight: 400;
+                    text-align: right;
+                    font-size: 24px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: 'Playfair Display', serif;
+                    letter-spacing: 0.1rem;
+                    }
+                    .portada-historia img {
+                        width: 457px;
+                    }
+            /* -----ARTICULOS HISTORIA----- */
+
+            /* IMG ARTICULOS -HISTORIA */
+                .tamaño-img-art-historia {
+                    width: 386px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                }
+                .tamaño-img-art-historia-quique {
+                    width: 386px;
+                    transform: scaleX(-1);
+                    
+                }
+        
+
+    /*--------------- CSS JUEGA --------------*/
+
+            /* PORTADA JUEGA*/
+                .portada-juega {
+                    background-color: #6567C9;
+                    background-size: 100%;
+                    background-position: center center;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                }
+
+            /*  h1 juega */
+                .portada-juega h1 {
+                    font-weight: 400;
+                    text-align: right;
+                    font-size: 48px;
+                    text-decoration:none;
+                    color: yellow;
+                    font-family: "fuente-juego";
+                    letter-spacing: 0.2rem;
+                }
+
+                    /* subt h2 juega*/
+                    .portada-juega h2 {
+                    font-weight: 400;
+                    text-align: right;
+                    font-size: 33px;
+                    text-decoration:none;
+                    color: yellow;
+                    font-family: 'Playfair Display', serif;
+                    letter-spacing: 0.1rem;
+
+                }
+
+                .portada-juega h3 {
+                    font-weight: 400;
+                    text-align: right;
+                    font-size: 26px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: 'Playfair Display', serif;
+                    letter-spacing: 0.1rem;
+                }
+
+
+            /* imagen portada juega */
+                .portada-juega img {
+                    width: 457px;
+                    
+                }
+
+            /* GAME */
+                .tamaño-img-art-juega-quique {
+                    width: 300px;
+                    transform: scaleX(-1);
+                    
+                }
+                .game {
+                    width: 90%;
+                    height: 600px;
+                    background-color: black;
+                    
+                }
+                .bg-juega {
+                    background-color: #3A3B7C;
+                }
+                .text-game p{
+                    color: white;
+                }
+
+
+
+
+    /* ----------CONTACTO------- */
+
+        .portada-contacto {
+            background-image: url(../img/fondo-madera.png);
+            background-size: 100%;
+            background-position: center center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /*  h1 CONTACTO */
+        .portada-contacto h1 {
+            font-weight: 700;
+            text-align: right;
+            font-size: 50px;
+            text-decoration:none;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.2rem;
+        }
+            /* subt h2 CONTACTO*/
+            .portada-contacto h2 {
+            font-weight: 400;
+            text-align: right;
+            font-size: 24px;
+            text-decoration:none;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1rem;
+        }
+        .portada-contacto img {
+            width: 400px;
+        }
+
+        .portada-contacto h3 {
+            font-weight: 400;
+            text-align: right;
+            font-size: 23px;
+            text-decoration:none;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1rem;
+        }
+
+    /* -------------FORMULARIO------------- */
+        /* titululo form */
+            .titulo-form {
+                font-weight: 550;
+                text-align: left;
+                font-size: 23px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Quicksand', sans-serif;
+                letter-spacing: 0.1rem;
+            }
+        /* label form */
+            .formulario {
+                font-weight: 400;
+                text-align: left;
+                font-size: 23px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 0.1rem;
+            }
+        /* boton enviar */
+            .formulario input[type="submit"] {
+            
+                font-family: 'Quicksand', sans-serif;
+                color: #757575;
+                font-size: 48px;
+                font-weight: 500;
+                letter-spacing: 0.2rem;
+                background-color: #FBE405;
+                text-decoration: none;
+                border: none;
+            }
+
+    /* ------articulos contacto------ */
+        /* texto articulos */
+            .texto-articulos-contacto {
+                font-weight: 400;
+                text-align: left;
+                font-size: 24px;
+                text-decoration:none;
+                color: #757575;
+                font-family: 'Quicksand', sans-serif; 
+                
+            }
+        /* titulos articulos */
+            .texto-articulos-contacto h2{
+                font-weight: 700;
+                text-align: left;
+                font-size: 32px;
+                text-decoration:none;
+                color: #757575;
+                font-family: 'Quicksand', sans-serif;
+                letter-spacing: 0.1rem;
+            }
+
+            .color-preguntas {
+                background-color: #E9E8E8;
+
+            }
+
+            .color-terminos {
+                background-color: #D9D9D9;
+
+            }
+

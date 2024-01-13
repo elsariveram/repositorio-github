@@ -15,6 +15,10 @@
                 font-family: fuente-juego;
                 src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
         }
+
+    /* ESTILO UNIVERSAL */
+        *{ margin: 0px;}
+
     /*ESTILOS DE BODY*/
         body {
             background-color: #F5F2F2;
@@ -24,17 +28,31 @@
         }
 
     /* ESTILOS HEADER*/
-        header {
+        header nav {
+            display: inline;
             background-color: #1FC1CB;
+            position: fixed;
+            width: 100%;
+        }
+            
+    
+            /* grid nav */
+            .grid-container {
+                display: grid;
+                grid-template-rows: 100px 100px;
+                grid-template-columns: repeat(5, 1fr);
+                justify-content: center;
+            }
+            .grid-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            .first-item {
+                grid-column: 1/6;
+            }
+        
 
-        }
-     .flex-nav {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        align-items: center;
-        flex-wrap: wrap;
-        }
     /* ESTILO MENUS */
         .clase-menus {
             color: #E9E8E8;
@@ -44,13 +62,17 @@
             list-style-type: none;
             
             
+            
         }
                 /* estilo Logo */
-            .logo-header-class {
+            .logo-header-class {   
             font-size: 44px;
             text-decoration:none;
             color: white;
             font-family: "fuente-logo";
+            
+            
+            
 
         }
             .logo-header-class span {

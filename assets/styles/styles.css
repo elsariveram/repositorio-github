@@ -341,18 +341,63 @@
 
     /* SECCION ARTICULOS INDEX*/
 
+    /* MAQUETACION ARTICULOS INDEX */
+
+    .grid-articulos-index {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 550px;
+        flex-wrap: wrap; */
+        /* margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px; */
+        
+    }
+    .grid-articulos-item-1 {
+        width: 290px;
+        height: 350px;
+        margin: 20px;
+        /* grid-column: 1/2;
+        grid-row: 1/2; */
+    }
+    .grid-articulos-item-2 {
+        width: 290px;
+        height: 350px;
+        margin: 20px;
+        /* grid-column: 2/3;
+        grid-row: 1/2; */
+    }
+    .grid-articulos-item-3 {
+        width: 290px;
+        height: 350px;
+        margin: 20px;
+        /* grid-column: 3/4;
+        grid-row: 1/2; */
+    }
+
     /* Articulos, IMAGENES */
         .tamaño-img-art-home {
-            width: 386px;
+            width: 300px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
         }
     /* Articulos, TEXTO */
         .texto-articulos{
             font-family: 'Playfair Display', serif;
-            font-size: 32px;
+            font-size: 20px;
             color: #757575;
             text-align: left;
+
         } 
+        .texto-articulos p {
+/* AQUI margen texto articulos */
+            padding-top: 10px;
+        }
 
     /*--------------- CSS TIENDA --------------*/
 

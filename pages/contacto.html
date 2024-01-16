@@ -40,51 +40,64 @@
                 <!-- MAIN -->
         <main>
  <!-- SECCION portada contacto -->
-            <section class="portada-contacto">
-                <H1>¡Contacta con Quique!...</H1>
-                <h2>"¿Quieres charlar con Quique? ¡Estamos todo oídos y patitas! 🚴‍♂️✉️ ¡Mándanos un mensaje y hagamos magia juntos!"</h2>
-                <h3>
-                    " ¡Quique aquí!  👀 <br>
-                    Leyendo todos los mensajes con mis gafas de aventura 3D "
-                </h3>
-                <img src="../assets/img/dibujo-quique.png" alt="">
-
+            <section class="portada-contacto grid-container-portada-contacto">
                 <!-- SECCION FORMULARIO -->
-            <section>
-                <!-- titulo formulario -->
-                <p class="titulo-form">
-                    ¡Rellena este formulario y Pedalea hasta Quique! 🚴‍♂️✨
-                </p>
-                <!--  formulario -->
-                <form action="formulario-contacto.php" method="post" class="formulario">
-                    <!-- correo -->
-                    <label for="direccion">Tu dirección de correo electrónico</label>
-                    <input type="text" name="direccion" placeholder="tucorreo@dominio.com">
-                    <!-- nombre -->
-                    <label for="nombre">Tu nombre y apellido</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Quique Cleta">
-                    <!-- asunto SELECT-->
-                    <label for="asunto">Asunto</label>
-                    <select name="asunto" id="asunto">
-                        <option value="">---Contar mi experiencia a Quique---</option>
-                        <option value="">---Solicitar Mayor Información sobre Nuestros Libros---</option>
-                        <option value="">---Consulta para Compras a Granel - ¡Ofertas Especiales!---</option>
-                        <option value="">---Colaboración con Instituciones y Fundaciones - ¡Unimos Fuerzas!---</option>
-                        <option value="">---Ideas para Eventos o Actividades con Quique Cleta---</option>
-                        <option value="">---Problemas con Mi Pedido - Necesito Ayuda---</option>
-                        <option value="">---Preguntas sobre Derechos de Autor y Uso Comercial---</option>
-                        <option value="">---¡Quiero Llevar la Magia de Quique a mi Tienda!---</option>
-                        <option value="">---otro---</option>
-                    </select>
-                    <!-- mensaje -->
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¡Hola Quique y equipo! Quiero contarles una historia tan emocionante como las páginas de sus libros."></textarea>
-                    <!-- ENVIAR -->
-                    <input type="submit" value="Enviar mensaje🌟">
-                </form>
-                
+                <section class="grid-item1-portada-contacto">
+                    <!-- titulo formulario -->
+                    <p class="titulo-form width-formulario ">
+                        ¡Rellena este formulario y Pedalea hasta Quique! 🚴‍♂️✨
+                    </p>
+                    <!--  formulario -->
+                    <form action="formulario-contacto.php" method="post" class="formulario formulario-flex">
+                        <!-- correo -->
+                        <label for="direccion">Tu dirección de correo electrónico</label>
+                        <input type="text" name="direccion" placeholder="tucorreo@dominio.com" class="width-formulario">
+                        <!-- nombre -->
+                        <label for="nombre">Tu nombre y apellido</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Quique Cleta" class="width-formulario">
+                        <!-- asunto SELECT-->
+                        <label for="asunto">Asunto</label>
+                        <select name="asunto" id="asunto"
+                        class="width-formulario">
+                            <option value="">---Contar mi experiencia a Quique---</option>
+                            <option value="">---Solicitar Mayor Información sobre Nuestros Libros---</option>
+                            <option value="">---Consulta para Compras a Granel - ¡Ofertas Especiales!---</option>
+                            <option value="">---Colaboración con Instituciones y Fundaciones - ¡Unimos Fuerzas!---</option>
+                            <option value="">---Ideas para Eventos o Actividades con Quique Cleta---</option>
+                            <option value="">---Problemas con Mi Pedido - Necesito Ayuda---</option>
+                            <option value="">---Preguntas sobre Derechos de Autor y Uso Comercial---</option>
+                            <option value="">---¡Quiero Llevar la Magia de Quique a mi Tienda!---</option>
+                            <option value="">---otro---</option>
+                        </select>
+                        <!-- mensaje -->
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¡Hola Quique y equipo! Quiero contarles una historia tan emocionante como las páginas de sus libros." class="width-formulario"></textarea>
+                        <!-- ENVIAR -->
+                        <input type="submit" value="Enviar mensaje🌟">
+                    </form>
+                    
 
-            </section>
+                </section>
+                <!-- SECCION derecha formulario -->
+                <div class="grid-item2-portada-contacto">
+                    <H1>¡Contacta con Quique!...</H1>
+                    <br>
+                    <h2>"¿Quieres charlar con Quique? ¡Estamos todo oídos y patitas! 🚴‍♂️✉️ ¡Mándanos un mensaje y hagamos magia juntos!"</h2>
+                    <h3>
+                        " ¡Quique aquí!  👀 <br>
+                        Leyendo todos los mensajes con mis gafas de aventura 3D "
+                    </h3>
+                    <img src="../assets/img/dibujo-quique.png" alt="">
+                </div>
+                <!-- borde blanco -->
+                <div class="borde-blanco">
+
+                </div>
+                <!-- negro fondo formulario -->
+                <div class="negro-fondo-formulario">
+
+                </div>
+                
             </section>
 
         

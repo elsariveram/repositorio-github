@@ -1034,13 +1034,13 @@
             background-color: #F5F2F2;
         }
         
-        main {
-            /* display: flex;
+        /* main {
+            display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            border: 1px solid red; */
+            border: 1px solid red;
             
-        }
+        } */
         footer {
             background-color: #1FC1CB;
            

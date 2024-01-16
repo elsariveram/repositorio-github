@@ -16,10 +16,10 @@
                 src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
         }
  /* ---------------MEDIA QUERY --------------------------*/
-/*--------- MOVIL */
-        @media only screen and (max-width: 900px) {
+/*---------MOVIL-------------------------------------------------------------- */
+        @media only screen and (max-width: 480px) {
 
-            /* maquetacion body */
+            /*  maquetacion body  MOVIL*/
             header {
                 height: auto;
              }  
@@ -27,13 +27,14 @@
             
                 display: none;
             }
-            /* margen nav bootstrap */
+            /* margen nav bootstrap MOVIL*/
             .navbar {
-                --bs-navbar-padding-y: 0px; 
+                --bs-navbar-padding-y: 0px;
+                /* position: fixed;  */
             }
             
 
-             /* maquetacion header */
+             /* maquetacion header MOVIL*/
              .grid-container {
                 display: grid;
                 grid-template-rows: repeat(5,80px) ;
@@ -52,44 +53,15 @@
             
                 display: none;
             }
-        }
-/*---- tablet */
-                @media only screen and (min-width: 481px) and (max-width: 991px)  {
-                        /* maquetacion body */
-            header {
-                height: auto;
-             }  
-             /* margen nav bootstrap */
-            .navbar {
-                --bs-navbar-padding-y: 0px; 
-            }
-             .ocultar-nav {
-            
-                display: none;
-            }
-            
-             /* maquetacion header */
-             .grid-container-tablet {
-                display: grid;
-                grid-template-rows: repeat(5,80px) ;
-                grid-template-columns: 1 fr;
-                justify-content: center;
-            }
-            .grid-item-tablet {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                }
-        
-        }
-        /* nav bootstrap */
+
+            /* nav bootstrap MOVIL*/
         .color-nav {
             background-color: #1FC1CB;
             --bs-accordion-active-color: white;
             --bs-accordion-active-bg: #1FC1CB;
             --bs-navbar-active-color: rgb(244, 244, 199);
         }
-        /* Estilo  enlaces nav bootstrap */
+        /* Estilo  enlaces nav bootstrap MOVIL*/
                 .clase-menus.nav-link {
                     color: white;
                 }
@@ -114,6 +86,7 @@
 
                 .navbar-nav {
                     text-align: center;
+
                 }
                 
                 
@@ -122,25 +95,569 @@
                     margin: 0 10px; 
                 }
 
-                /* Estilo para el fondo del botón de navegación */
+                /* Estilo para el fondo del botón de navegación MOVIL */
                 .navbar-toggler{
                     border-color:white;
 
 
                 }
 
+            /* MAQUETACION PORTADA INDEX - MOVIL */
+                /* logo h1 MOVIL*/
+                h1 {
+                    font-weight: 100;
+                    text-align: center;
+                    font-size: 50px;
+                    text-decoration:none;
+                    color: yellow;
+                    font-family: "fuente-logo";
+                }
+                h1 span {
+                    font-size: 15.3px;
+                }
+                /* subt h2 MOVIL*/
+                h2 {
+                    font-weight: 100;
+                    text-align: center;
+                    font-size: 25px;
+                    text-decoration:none;
+                    color: yellow;
+                    font-family: "fuente-logo";
+                }
+                /* subt h3 MOVIL */
+                h3 {
+                    font-weight: 200;
+                    text-align: center;
+                    font-size: 15px;
+                    text-decoration:none;
+                    color: yellow;
+                    font-family: 'Quicksand', sans-serif;
+                }
+
+                /* Boton tienda MOVIL*/
+                .boton-tienda {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+                    border: 1px solid #6567C9;;
+                    font-family: 'Quicksand', sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 500;
+                    letter-spacing: 0.2rem;
+                    background-color: #6567C9;
+                    text-decoration: none;
+                    height: 50px;
+                    padding: 0px;
+                    margin: 0px ;
+                    border-radius: 30px;
+                }
+                .boton-tienda:hover{
+                    background-color: #5c5db3;
+                    border: 1px solid #5c5db3;
+                }
+                .boton-tienda:active,
+                .boton-tienda:focus, .boton-tienda:disabled {
+                    --bs-btn-hover-border-color: #4d4e95;
+                    --bs-btn-active-bg: #4d4e95;
+                    --bs-btn-active-border-color: #4d4e95;
+                    
+                }
+
+                .div-botones{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1;
+                    height: 100%;
+                    padding-bottom: 50px;
+                }
+                
+                  /* MAQUETACION MOVIL INDEX PORTADA div para TEXTO y BOTON TIENDA  */
+         .div-texto-portada {
+            border: 2px solid blue;
+            background-color: #1818186e;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            z-index: 0;
+            width: 100%;
+            height: 300px;
+            padding-top: 20px;
+        }
+        /* MAQUETACION MOVIL INDEX PORTADA div IMAGEN fondo */
+        .div-fondo-portada {
+            /* border: 3px solid magenta;
+            background-color: #3A3B7C; */
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 300px;
+            background-image: url(../img/portada-1.png);
+            background-size: 100%;
+            background-position: center center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+                
+            /* SECCION ARTICULOS INDEX MOVIL*/
+
         
- /* desktop------------- */
+                /* Articulos, IMAGENES MOVIL*/
+                .tamaño-img-art-home {
+                    width: 250px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                }
+            /* Articulos, TEXTO MOVIL*/
+                .texto-articulos{
+                    font-family: 'Playfair Display', serif;
+                    font-size: 18px;
+                    color: #757575;
+                    text-align: left;
+
+                } 
+                .texto-articulos p {
+                    padding-top: 10px;
+                }
+
+                  /* MAQUETACION ARTICULOS INDEX MOVIL*/
+
+                  .flex-articulos-index {
+                    display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            margin-top: 30px;
+                            height: auto;
+                    
+                }
+                .flex-articulos-item-1 {
+                    width: 290px;
+                    height: 350px;
+                    /* margin: 5px; */
+                
+                }
+                .flex-articulos-item-2 {
+                    width: 290px;
+                    height: 350px;
+                    /* margin: 5px; */
+                
+                }
+                .flex-articulos-item-3 {
+                    width: 290px;
+                    height: 350px;
+                    /* margin: 5px; */
+
+                }
+
+                  /* MAQUETACION ARTICULOS TIENDA MOVIL*/
+
+                  .flex-articulos-tienda {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin-top: 50px;
+                    height: auto;
+                    
+                    }
+
+                    .flex-articulos-item-1-tienda {
+                        width: 290px;
+                        height: auto;
+                        margin: 20px;
+                        
+                    
+                    }
+                    .flex-articulos-item-2-tienda {
+                        width: 290px;
+                        height: auto;
+                        margin: 20px;
+                    
+                    }
+                    .flex-articulos-item-3-tienda {
+                        width: 290px;
+                        height: auto;
+                        margin: 20px;
+
+                    }
+
+        }
+
+
+
+/*----tablet--------------------------------------------------------- */
+                @media only screen and (min-width: 481px) and (max-width: 991px)  {
+                        /* maquetacion body */
+            header {
+                height: auto;
+             }  
+             /* margen nav bootstrap TABLET*/
+            .navbar {
+                --bs-navbar-padding-y: 0px; 
+                /* position: fixed; */
+            }
+             .ocultar-nav {
+            
+                display: none;
+            }
+            
+             /* maquetacion header TABLET */
+             .grid-container-tablet {
+                display: grid;
+                grid-template-rows: repeat(5,80px) ;
+                grid-template-columns: 1 fr;
+                justify-content: center;
+            }
+            .grid-item-tablet {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                /* nav bootstrap  TABLET*/
+        .color-nav {
+            background-color: #1FC1CB;
+            --bs-accordion-active-color: white;
+            --bs-accordion-active-bg: #1FC1CB;
+            --bs-navbar-active-color: rgb(244, 244, 199);
+        }
+        /* Estilo  enlaces nav bootstrap TABLET */
+                .clase-menus.nav-link {
+                    color: white;
+                }
+                
+                .clase-menus.nav-link:hover {
+                    color: rgb(244, 244, 199) ; 
+                }
+                
+                .clase-menus.nav-link.active {
+                    color: rgb(244, 244, 199);
+                }
+                /* Estilo para el enlace del logo TABLET*/
+                .logo-header-class.navbar-brand {
+                    color:white;  
+                    text-align: center;
+                }
+                
+                
+                .logo-header-class.navbar-brand:hover {
+                    color:white; 
+                }
+
+                .navbar-nav {
+                    text-align: center;
+                }
+                
+                
+                .clase-menus.nav-link {
+                    display: inline-block; 
+                    margin: 0 10px; 
+                }
+
+                /* Estilo para el fondo del botón de navegación TABLET */
+                .navbar-toggler{
+                    border-color:white;
+
+
+                }
+            /* estilos PORTADA INDEX TABLET*/
+                /* logo h1 TABLET*/
+                h1 {
+                    font-weight: 100;
+                    text-align: center;
+                    font-size: 80px;
+                    text-decoration:none;
+                    color: red;
+                    font-family: "fuente-logo";
+                }
+                h1 span {
+                    font-size: 20.3px;
+                }
+        /* subt h2 TABLET*/
+                h2 {
+                    font-weight: 100;
+                    text-align: center;
+                    font-size: 40px;
+                    text-decoration:none;
+                    color: red;
+                    font-family: "fuente-logo";
+                }
+        /* subt h3TABLET */
+                h3 {
+                    font-weight: 400;
+                    text-align: center;
+                    font-size: 21px;
+                    text-decoration:none;
+                    color: red;
+                    font-family: 'Quicksand', sans-serif;
+                }
+
+    /* Boton tienda TABLET */
+                .boton-tienda {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                    width: 200px;
+                    border: 1px solid #6567C9;;
+                    font-family: 'Quicksand', sans-serif;
+                    color: white;
+                    font-size: 48px;
+                    font-weight: 500;
+                    letter-spacing: 0.2rem;
+                    background-color: #6567C9;
+                    text-decoration: none;
+                    width: 350px;
+                    height: 70px;
+                    padding: 0px;
+                    margin: 0px ;
+                    border-radius: 30px;
+                }
+                .boton-tienda:hover{
+                    background-color: #5c5db3;
+                    border: 1px solid #5c5db3;
+                }
+                .boton-tienda:active,
+                .boton-tienda:focus, .boton-tienda:disabled {
+                    --bs-btn-hover-border-color: #4d4e95;
+                    --bs-btn-active-bg: #4d4e95;
+                    --bs-btn-active-border-color: #4d4e95;
+                    
+                }
+
+                .div-botones{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1;
+                    height: 100%;
+                    padding-bottom: 50px;
+                }
+                /* MAQUETACION TABLET INDEX PORTADA div para TEXTO y BOTON TIENDA  */
+         .div-texto-portada {
+            border: 2px solid blue;
+            background-color: #1818186e;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            z-index: 0;
+            width: 100%;
+            height: 550px;
+            padding-top: 30px;
+        }
+        /* MAQUETACION TABLET INDEX PORTADA div IMAGEN fondo */
+        .div-fondo-portada {
+            /* border: 3px solid magenta;
+            background-color: #3A3B7C; */
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 550px;
+            background-image: url(../img/portada-1.png);
+            background-size: 100%;
+            background-position: center center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+
+             /* SECCION ARTICULOS INDEX TABLET*/
+
+        
+                /* Articulos, IMAGENES TABLET*/
+                .tamaño-img-art-home {
+                    width: 280px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                }
+            /* Articulos, TEXTO TABLET*/
+                .texto-articulos{
+                    font-family: 'Playfair Display', serif;
+                    font-size: 20px;
+                    color: #757575;
+                    text-align: left;
+
+                } 
+                .texto-articulos p {
+                    padding-top: 10px;
+                }
+
+                /* MAQUETACION ARTICULOS INDEX TABLET*/
+
+                .flex-articulos-index {
+                    display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            margin-top: 50px;
+                            height: auto;
+                    
+                }
+                .flex-articulos-item-1 {
+                    width: 290px;
+                    height: 350px;
+                    margin: 20px;
+                
+                }
+                .flex-articulos-item-2 {
+                    width: 290px;
+                    height: 350px;
+                    margin: 20px;
+                
+                }
+                .flex-articulos-item-3 {
+                    width: 290px;
+                    height: 350px;
+                    margin: 20px;
+
+                }
+
+                /* Boton tienda -TIENDA TABLET*/
+                .boton-tienda-mercado-libre {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                    width: auto;
+                    
+                    border: 1px solid #FBE405;
+                    font-family: 'Quicksand', sans-serif;
+                    color: #757575;
+                    font-size: 30px;
+                    font-weight: 500;
+                    letter-spacing: 0.2rem;
+                    background-color: #FBE405;
+                    text-decoration: none;
+                    height: auto;
+                    padding: 10px;
+                    margin: 0px ;
+                    border-radius: 30px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                }
+                .boton-tienda-mercado-libre:hover{
+                    background-color: #dac503;
+                    border: 1px solid #dac503;
+                    --bs-btn-hover-color: #585757;
+                }
+                .boton-tienda-mercado-libre:active,
+                .boton-tienda-mercado-libre:focus, .boton-tienda-mercado-libre:disabled {
+                    --bs-btn-hover-border-color: #9d8e02;
+                    --bs-btn-active-bg: #9d8e02;
+                    --bs-btn-active-border-color: #9d8e02;
+                    --bs-btn-active-color: #484747;
+                    
+                }
+
+                .div-botones-mercado-libre{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 0;
+                    height: 100%;
+                    padding-top: 30px;
+                }
+        
+                 /* MAQUETACION ARTICULOS TIENDA TABLET*/
+
+                 .flex-articulos-tienda {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    margin-top: 50px;
+                    height: auto;
+                    
+                    }
+
+                    .flex-articulos-item-1-tienda {
+                        width: 290px;
+                        height: auto;
+                        margin: 20px;
+                        
+                    
+                    }
+                    .flex-articulos-item-2-tienda {
+                        width: 290px;
+                        height: auto;
+                        margin: 20px;
+                    
+                    }
+                    .flex-articulos-item-3-tienda {
+                        width: 290px;
+                        height: auto;
+                        margin: 20px;
+
+                    }
+                /* MAQUETACION boton mercado libre TABLET*/
+
+                /* Boton tienda -TIENDA TABLET*/
+                .boton-tienda-mercado-libre {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                    width: auto;
+                    
+                    border: 1px solid #FBE405;
+                    font-family: 'Quicksand', sans-serif;
+                    color: #757575;
+                    font-size: 30px;
+                    font-weight: 500;
+                    letter-spacing: 0.2rem;
+                    background-color: #FBE405;
+                    text-decoration: none;
+                    height: auto;
+                    padding: 10px;
+                    margin: 0px ;
+                    border-radius: 30px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                }
+                .boton-tienda-mercado-libre:hover{
+                    background-color: #dac503;
+                    border: 1px solid #dac503;
+                    --bs-btn-hover-color: #585757;
+                }
+                .boton-tienda-mercado-libre:active,
+                .boton-tienda-mercado-libre:focus, .boton-tienda-mercado-libre:disabled {
+                    --bs-btn-hover-border-color: #9d8e02;
+                    --bs-btn-active-bg: #9d8e02;
+                    --bs-btn-active-border-color: #9d8e02;
+                    --bs-btn-active-color: #484747;
+                    
+                }
+
+                .div-botones-mercado-libre{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 0;
+                    height: 100%;
+                    padding-top: 30px;
+                }
+
+
+        }
+         
+
+        
+ /* -------------desktop------------------------------------------- */
          @media only screen and (min-width: 991px) {
-               /* maquetacion body */
+               /* maquetacion body DESKTOP */
                header {
                 height: 170px;
             }  
             .ocultar-acordeon {
                               display: none;  
             }
-                    /* maquetacion HEADER */
-                            /* grid NAV */
+                    /* maquetacion HEADER DESKTOP */
+                            /* grid NAV DESKTOP*/
                             .grid-container {
                                 display: grid;
                                 grid-template-rows: 80px 80px;
@@ -156,8 +673,8 @@
                                 grid-column: 1/6;
                             }
                             
-                        }
-                        /* MAQUETACION GRID FOOTER */
+                            
+                        /* MAQUETACION GRID FOOTER DESKTOP*/
                         .footer-grid-container {
                             display: grid;
                             grid-template-rows: 330px;
@@ -218,7 +735,7 @@
                                 justify-content: end;
                                 padding-bottom: 30px;
                             }
-                    /* MAQUETACION INDEX PORTADA div para TEXTO y BOTON TIENDA  */
+                    /* MAQUETACION INDEX PORTADA div para TEXTO y BOTON TIENDA  DESKTOP*/
                     .div-texto-portada {
                         border: 2px solid blue;
                         background-color: #1818186e;
@@ -231,7 +748,7 @@
                         height: 550px;
                         padding-top: 30px;
                     }
-                    /* MAQUETACION INDEX PORTADA div IMAGEN fondo */
+                    /* MAQUETACION INDEX PORTADA div IMAGEN fondo DESKTOP*/
                     .div-fondo-portada {
                         /* border: 3px solid magenta;
                         background-color: #3A3B7C; */
@@ -245,7 +762,82 @@
                         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
                         }
 
-                        /* MAQUETACION ARTICULOS INDEX */
+                        /* ESTILOS COLORES PORTADA DESKTOP */
+                /* logo h1 DESKTOP */
+                h1 {
+                    font-weight: 100;
+                    text-align: center;
+                    font-size: 100px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: "fuente-logo";
+                }
+                h1 span {
+                    font-size: 33.3px;
+                }
+                /* subt h2 DESKTOP */
+                h2 {
+                    font-weight: 100;
+                    text-align: center;
+                    font-size: 50px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: "fuente-logo";
+                }
+                /* subt h3 DESKTOP */
+                h3 {
+                    font-weight: 400;
+                    text-align: center;
+                    font-size: 31px;
+                    text-decoration:none;
+                    color: white;
+                    font-family: 'Quicksand', sans-serif;
+                }
+
+                /* Boton tienda DESKTOP*/
+                .boton-tienda {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                    width: 200px;
+                    border: 1px solid #6567C9;;
+                    font-family: 'Quicksand', sans-serif;
+                    color: white;
+                    font-size: 48px;
+                    font-weight: 500;
+                    letter-spacing: 0.2rem;
+                    background-color: #6567C9;
+                    text-decoration: none;
+                    width: 350px;
+                    height: 70px;
+                    padding: 0px;
+                    margin: 0px ;
+                    border-radius: 30px;
+                }
+                .boton-tienda:hover{
+                    background-color: #5c5db3;
+                    border: 1px solid #5c5db3;
+                }
+                .boton-tienda:active,
+                .boton-tienda:focus, .boton-tienda:disabled {
+                    --bs-btn-hover-border-color: #4d4e95;
+                    --bs-btn-active-bg: #4d4e95;
+                    --bs-btn-active-border-color: #4d4e95;
+                    
+                }
+
+                .div-botones{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1;
+                    height: 100%;
+                    padding-bottom: 50px;
+                }
+
+                        /* MAQUETACION ARTICULOS INDEX DESKTOP*/
 
                         .flex-articulos-index {
                             display: flex;
@@ -275,7 +867,7 @@
 
                         }
 
-            /* MAQUETACION PORTADA TIENDA */
+            /* MAQUETACION PORTADA TIENDA DESKTOP */
             .grid-container-portada-tienda {
                 display: grid;
                 grid-template-columns: 45% 55% ;
@@ -328,7 +920,7 @@
             }
         
 
-                    /* MAQUETACION ARTICULOS TIENDA */
+                    /* MAQUETACION ARTICULOS TIENDA DESKTOP*/
 
                     .flex-articulos-tienda {
                         display: flex;
@@ -359,9 +951,9 @@
                             margin: 20px;
 
                         }
-                    /* MAQUETACION boton mercado libre */
+                    /* MAQUETACION boton mercado libre DESKTOP*/
 
-                    /* Boton tienda -TIENDA */
+                    /* Boton tienda -TIENDA DESKTOP*/
                     .boton-tienda-mercado-libre {
                         display: flex;
                         flex-direction: row;
@@ -407,7 +999,29 @@
                         padding-top: 30px;
                     }
 
-/* ---------------------FINAL RESPONSIVE QUERY----------------- */
+                    /* SECCION ARTICULOS INDEX DESKTOP*/
+
+        
+        /* Articulos, IMAGENES DESKTOP*/
+            .tamaño-img-art-home {
+                width: 280px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+        /* Articulos, TEXTO DESKTOP*/
+            .texto-articulos{
+                font-family: 'Playfair Display', serif;
+                font-size: 20px;
+                color: #757575;
+                text-align: left;
+
+            } 
+            .texto-articulos p {
+                padding-top: 10px;
+            }
+                        }
+
+                        
+/* ---------------------FINAL RESPONSIVE QUERY----------------------- */
     /* ESTILO UNIVERSAL */
     *{ 
         margin: 0px;
@@ -421,10 +1035,10 @@
         }
         
         main {
-            display: flex;
+            /* display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            border: 1px solid red;
+            border: 1px solid red; */
             
         }
         footer {
@@ -510,99 +1124,8 @@
 
     /* ---PORTADA INDEX----*/
 
-        /* logo h1 */
-                h1 {
-                    font-weight: 100;
-                    text-align: center;
-                    font-size: 100px;
-                    text-decoration:none;
-                    color: white;
-                    font-family: "fuente-logo";
-                }
-                h1 span {
-                    font-size: 33.3px;
-                }
-        /* subt h2 */
-                h2 {
-                    font-weight: 100;
-                    text-align: center;
-                    font-size: 50px;
-                    text-decoration:none;
-                    color: white;
-                    font-family: "fuente-logo";
-                }
-        /* subt h3 */
-                h3 {
-                    font-weight: 400;
-                    text-align: center;
-                    font-size: 31px;
-                    text-decoration:none;
-                    color: white;
-                    font-family: 'Quicksand', sans-serif;
-                }
-
-    /* Boton tienda */
-                .boton-tienda {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: flex-start;
-                    width: 200px;
-                    border: 1px solid #6567C9;;
-                    font-family: 'Quicksand', sans-serif;
-                    color: white;
-                    font-size: 48px;
-                    font-weight: 500;
-                    letter-spacing: 0.2rem;
-                    background-color: #6567C9;
-                    text-decoration: none;
-                    width: 350px;
-                    height: 70px;
-                    padding: 0px;
-                    margin: 0px ;
-                    border-radius: 30px;
-                }
-                .boton-tienda:hover{
-                    background-color: #5c5db3;
-                    border: 1px solid #5c5db3;
-                }
-                .boton-tienda:active,
-                .boton-tienda:focus, .boton-tienda:disabled {
-                    --bs-btn-hover-border-color: #4d4e95;
-                    --bs-btn-active-bg: #4d4e95;
-                    --bs-btn-active-border-color: #4d4e95;
-                    
-                }
-
-                .div-botones{
-                    display: flex;
-                    position: relative;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 1;
-                    height: 100%;
-                    padding-bottom: 50px;
-                }
-
-    /* SECCION ARTICULOS INDEX*/
-
         
-        /* Articulos, IMAGENES */
-            .tamaño-img-art-home {
-                width: 280px;
-                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-            }
-        /* Articulos, TEXTO */
-            .texto-articulos{
-                font-family: 'Playfair Display', serif;
-                font-size: 20px;
-                color: #757575;
-                text-align: left;
-
-            } 
-            .texto-articulos p {
-                padding-top: 10px;
-            }
+    
 
     /*--------------- CSS TIENDA --------------*/
        

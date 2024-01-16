@@ -394,11 +394,12 @@
             .grid-container-portada-tienda {
                 display: grid;
                 grid-template-columns: 45% 55% ;
-                grid-template-rows: 600px ;
+                grid-template-rows: 520px ;
                 justify-content: center;
                 align-items: center;
                position: relative;
-               z-index: -2;
+               z-index: 0;
+               width: 100%;
                 
                 
             }
@@ -461,6 +462,55 @@
             margin: 20px;
 
         }
+    /* maquetacion boton mercado libre */
+
+    /* Boton tienda -TIENDA */
+                .boton-tienda-mercado-libre {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                    width: 1100px;
+                    border: 1px solid #FBE405;
+                    font-family: 'Quicksand', sans-serif;
+                    color: #757575;
+                    font-size: 43px;
+                    font-weight: 500;
+                    letter-spacing: 0.2rem;
+                    background-color: #FBE405;
+                    text-decoration: none;
+                    height: 70px;
+                    padding: 0px;
+                    margin: 0px ;
+                    border-radius: 30px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                }
+                .boton-tienda-mercado-libre:hover{
+                    background-color: #dac503;
+                    border: 1px solid #dac503;
+                    --bs-btn-hover-color: #585757;
+                }
+                .boton-tienda-mercado-libre:active,
+                .boton-tienda-mercado-libre:focus, .boton-tienda-mercado-libre:disabled {
+                    --bs-btn-hover-border-color: #9d8e02;
+                    --bs-btn-active-bg: #9d8e02;
+                    --bs-btn-active-border-color: #9d8e02;
+                    --bs-btn-active-color: #484747;
+                    
+                }
+
+                .div-botones-mercado-libre{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 0;
+                    height: 100%;
+                    padding-top: 30px;
+                }
+
+
+
     /* ----ESTILOS TIENDA---- */
         /* PORTADA TIENDA */
 
@@ -496,17 +546,7 @@
                 
             }
 
-        /* Boton tienda -TIENDA */
-            .portada-tienda-boton {
-                display: inline-block;
-                font-family: 'Quicksand', sans-serif;
-                color: #757575;
-                font-size: 48px;
-                font-weight: 500;
-                letter-spacing: 0.2rem;
-                background-color: #FBE405;
-                text-decoration: none;
-            }
+        
             .portada-tienda h3 {
                 font-weight: 400;
                 text-align: right;

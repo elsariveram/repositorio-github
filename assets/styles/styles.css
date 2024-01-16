@@ -590,8 +590,8 @@
             grid-row: 1/2;
             margin-right: 10%;
         }
-        /* MAQUETACION ARTICULOS HISTORIA */
 
+        /* MAQUETACION ARTICULOS HISTORIA */
     .flex-articulos-historia {
         display: flex;
         flex-direction: row;
@@ -681,6 +681,33 @@
         
 
     /*--------------- CSS JUEGA --------------*/
+        /* MAQUETACION PORTADA JUEGO */
+        .grid-container-portada-juego {
+            display: grid;
+            grid-template-columns: 60% 30%;
+            grid-template-rows: 520px ;
+            justify-content: center;
+            align-items: center;
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        }
+        .grid-item1-portada-juego {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            margin-right: 10%;    
+            margin-left: 10%;
+        }
+        .grid-item2-portada-juego {
+            display: flex;
+            justify-content: center;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            /* margin-right: 10%; */
+        }
                 /* MAQUETACION ARTICULOS JUEGO */
                     /* GRID CONTAINER JUEGO */
                     .grid-container-juego {

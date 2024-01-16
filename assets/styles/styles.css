@@ -190,7 +190,7 @@
                 
                   /* MAQUETACION MOVIL INDEX PORTADA div para TEXTO y BOTON TIENDA  */
          .div-texto-portada {
-            border: 2px solid blue;
+            
             background-color: #1818186e;
             display: flex;
             flex-direction: column;

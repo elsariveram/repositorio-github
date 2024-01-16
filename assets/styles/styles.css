@@ -15,14 +15,23 @@
                 font-family: fuente-juego;
                 src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
         }
-    /* MEDIA QUERY */
-        /* MOVIL */
+ /* ---------------MEDIA QUERY --------------------------*/
+/*--------- MOVIL */
         @media only screen and (max-width: 900px) {
 
             /* maquetacion body */
             header {
-                height: 460px;
+                height: auto;
              }  
+             .ocultar-nav {
+            
+                display: none;
+            }
+            /* margen nav bootstrap */
+            .navbar {
+                --bs-navbar-padding-y: 0px; 
+            }
+            
 
              /* maquetacion header */
              .grid-container {
@@ -39,62 +48,373 @@
             .first-item {
                 border: 1px solid red;
             }
+            .ocultar-nav {
+            
+                display: none;
+            }
         }
-        /* tablet */
-                @media only screen and (min-width: 481px) and (max-width: 1023px)  {
+/*---- tablet */
+                @media only screen and (min-width: 481px) and (max-width: 991px)  {
                         /* maquetacion body */
             header {
-                height: 460px;
+                height: auto;
              }  
-
+             /* margen nav bootstrap */
+            .navbar {
+                --bs-navbar-padding-y: 0px; 
+            }
+             .ocultar-nav {
+            
+                display: none;
+            }
+            
              /* maquetacion header */
-             .grid-container {
+             .grid-container-tablet {
                 display: grid;
                 grid-template-rows: repeat(5,80px) ;
                 grid-template-columns: 1 fr;
                 justify-content: center;
             }
-            .grid-item {
+            .grid-item-tablet {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 }
-            .first-item {
-                border: 1px solid red;
-            }
-        }
         
-         /* desktop */
-         @media only screen and (min-width: 1024px) {
+        }
+        /* nav bootstrap */
+        .color-nav {
+            background-color: #1FC1CB;
+            --bs-accordion-active-color: white;
+            --bs-accordion-active-bg: #1FC1CB;
+            --bs-navbar-active-color: rgb(244, 244, 199);
+        }
+        /* Estilo  enlaces nav bootstrap */
+                .clase-menus.nav-link {
+                    color: white;
+                }
+                
+                .clase-menus.nav-link:hover {
+                    color: rgb(244, 244, 199) ; 
+                }
+                
+                .clase-menus.nav-link.active {
+                    color: rgb(244, 244, 199);
+                }
+                /* Estilo para el enlace del logo */
+                .logo-header-class.navbar-brand {
+                    color:white;  
+                    text-align: center;
+                }
+                
+                
+                .logo-header-class.navbar-brand:hover {
+                    color:white; 
+                }
+
+                .navbar-nav {
+                    text-align: center;
+                }
+                
+                
+                .clase-menus.nav-link {
+                    display: inline-block; 
+                    margin: 0 10px; 
+                }
+
+                /* Estilo para el fondo del botón de navegación */
+                .navbar-toggler{
+                    border-color:white;
+
+
+                }
+
+        
+ /* desktop------------- */
+         @media only screen and (min-width: 991px) {
                /* maquetacion body */
                header {
                 height: 170px;
             }  
-            /* maquetacion header */
-            /* grid nav */
-            .grid-container {
-                display: grid;
-                grid-template-rows: 80px 80px;
-                grid-template-columns: repeat(5, 1fr);
-                justify-content: center;
+            .ocultar-acordeon {
+                              display: none;  
             }
-            .grid-item {
-                display: flex;
+                    /* maquetacion HEADER */
+                            /* grid NAV */
+                            .grid-container {
+                                display: grid;
+                                grid-template-rows: 80px 80px;
+                                grid-template-columns: repeat(5, 1fr);
+                                justify-content: center;
+                            }
+                            .grid-item {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                }
+                            .first-item {
+                                grid-column: 1/6;
+                            }
+                            
+                        }
+                        /* MAQUETACION GRID FOOTER */
+                        .footer-grid-container {
+                            display: grid;
+                            grid-template-rows: 330px;
+                            grid-template-columns: 1fr 1fr 1fr;
+                        }
+                            .grid-lista-1-links {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                align-items:flex-start;
+                                margin-left: 50px;
+                            }
+                            .grid-footer-fabricacion {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: end;
+                                text-align: center;
+                                padding-bottom: 40px;
+                            }
+                            .grid-lista-central-footer {
+                                display: grid;
+                                grid-template-rows: repeat(4,auto);
+                                grid-template-columns: 1fr 1fr 1fr;
+                                ;
+                            }
+                            .logo-grid-footer {
+                                grid-column: 1/4;
+                                grid-row: 1/3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .grid-iconos-footer-1 {
+                                display: flex;
+                                grid-row: 3/4;
+                                grid-column: 1/2;
+                                justify-content: flex-end;
+                            }
+                            .grid-iconos-footer-2 {
+                                display: flex;
+                                grid-row: 3/4;
+                                grid-column: 2/3;
+                                justify-content: center;
+                            }
+                            .grid-iconos-footer-3 {
+                                display: flex;
+                                grid-row: 3/4;
+                                grid-column: 3/4;
+                                justify-content: flex-start;
+                            }
+                            
+                            .grid-copy-footer {
+                                grid-column: 1/4;
+                                grid-row: 4/5;
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: end;
+                                padding-bottom: 30px;
+                            }
+                    /* MAQUETACION INDEX PORTADA div para TEXTO y BOTON TIENDA  */
+                    .div-texto-portada {
+                        border: 2px solid blue;
+                        background-color: #1818186e;
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        justify-content: center;
+                        z-index: 0;
+                        width: 100%;
+                        height: 550px;
+                        padding-top: 30px;
+                    }
+                    /* MAQUETACION INDEX PORTADA div IMAGEN fondo */
+                    .div-fondo-portada {
+                        /* border: 3px solid magenta;
+                        background-color: #3A3B7C; */
+                        position: absolute;
+                        z-index: -1;
+                        width: 100%;
+                        height: 550px;
+                        background-image: url(../img/portada-1.png);
+                        background-size: 100%;
+                        background-position: center center;
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                        }
+
+                        /* MAQUETACION ARTICULOS INDEX */
+
+                        .flex-articulos-index {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            margin-top: 50px;
+                            height: 400px;
+                            
+                        }
+                        .flex-articulos-item-1 {
+                            width: 290px;
+                            height: 350px;
+                            margin: 20px;
+                        
+                        }
+                        .flex-articulos-item-2 {
+                            width: 290px;
+                            height: 350px;
+                            margin: 20px;
+                        
+                        }
+                        .flex-articulos-item-3 {
+                            width: 290px;
+                            height: 350px;
+                            margin: 20px;
+
+                        }
+
+            /* MAQUETACION PORTADA TIENDA */
+            .grid-container-portada-tienda {
+                display: grid;
+                grid-template-columns: 45% 55% ;
+                grid-template-rows: 520px ;
                 justify-content: center;
                 align-items: center;
-                }
-            .first-item {
-                grid-column: 1/6;
+               position: relative;
+               z-index: 0;
+               width: 100%;
+                
+                
             }
-        }
-            
-        
-    /* ESTILO UNIVERSAL */
-        *{ 
-            margin: 0px;
-            border: 0px;
-        }
+            .grid-item1-portada-tienda {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                display: flex;
+                justify-content: center;
+                
+            }
+            .grid-item2-portada-tienda {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                margin-right: 10%;
+               
 
+            }
+            .color-negro-portada-tienda {
+                background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+                width: 100%;
+                height: 100%;
+                grid-column: 1/3;
+                grid-row: 1/3;
+                position: relative;
+                z-index: -1;
+            }
+
+            .borde-blanco-tienda {
+                width: 95%;
+                height: 90%;
+                grid-column: 1/3;
+                grid-row: 1/3;
+                position: relative;
+                z-index: -1;
+                border: 1px solid white;
+                margin: 2%;
+                display: flex;
+            }
+        
+
+                    /* MAQUETACION ARTICULOS TIENDA */
+
+                    .flex-articulos-tienda {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        margin-top: 50px;
+                        height: 600px;
+                        
+                        }
+
+                        .flex-articulos-item-1-tienda {
+                            width: 290px;
+                            height: 350px;
+                            margin: 20px;
+                            
+                        
+                        }
+                        .flex-articulos-item-2-tienda {
+                            width: 290px;
+                            height: 350px;
+                            margin: 20px;
+                        
+                        }
+                        .flex-articulos-item-3-tienda {
+                            width: 290px;
+                            height: 350px;
+                            margin: 20px;
+
+                        }
+                    /* MAQUETACION boton mercado libre */
+
+                    /* Boton tienda -TIENDA */
+                    .boton-tienda-mercado-libre {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+                        width: auto;
+                        
+                        border: 1px solid #FBE405;
+                        font-family: 'Quicksand', sans-serif;
+                        color: #757575;
+                        font-size: 30px;
+                        font-weight: 500;
+                        letter-spacing: 0.2rem;
+                        background-color: #FBE405;
+                        text-decoration: none;
+                        height: auto;
+                        padding: 10px;
+                        margin: 0px ;
+                        border-radius: 30px;
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                    }
+                    .boton-tienda-mercado-libre:hover{
+                        background-color: #dac503;
+                        border: 1px solid #dac503;
+                        --bs-btn-hover-color: #585757;
+                    }
+                    .boton-tienda-mercado-libre:active,
+                    .boton-tienda-mercado-libre:focus, .boton-tienda-mercado-libre:disabled {
+                        --bs-btn-hover-border-color: #9d8e02;
+                        --bs-btn-active-bg: #9d8e02;
+                        --bs-btn-active-border-color: #9d8e02;
+                        --bs-btn-active-color: #484747;
+                        
+                    }
+
+                    .div-botones-mercado-libre{
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 0;
+                        height: 100%;
+                        padding-top: 30px;
+                    }
+
+/* ---------------------FINAL RESPONSIVE QUERY----------------- */
+    /* ESTILO UNIVERSAL */
+    *{ 
+        margin: 0px;
+        border: 0px;
+    }
+/* ---------------------ESTILOS----------------- */
+ 
     /*ESTILOS DE BODY*/
         body {
             background-color: #F5F2F2;
@@ -115,67 +435,7 @@
         ul{
             list-style-type: none;
         }
-        /* MAQUETACION GRID FOOTER */
-        .footer-grid-container {
-            display: grid;
-            grid-template-rows: 330px;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-            .grid-lista-1-links {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items:flex-start;
-                margin-left: 50px;
-            }
-            .grid-footer-fabricacion {
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-                text-align: center;
-                padding-bottom: 40px;
-            }
-            .grid-lista-central-footer {
-                display: grid;
-                grid-template-rows: repeat(4,auto);
-                grid-template-columns: 1fr 1fr 1fr;
-                ;
-            }
-                    .logo-grid-footer {
-                        grid-column: 1/4;
-                        grid-row: 1/3;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    .grid-iconos-footer-1 {
-                        display: flex;
-                        grid-row: 3/4;
-                        grid-column: 1/2;
-                        justify-content: flex-end;
-                    }
-                    .grid-iconos-footer-2 {
-                        display: flex;
-                        grid-row: 3/4;
-                        grid-column: 2/3;
-                        justify-content: center;
-                    }
-                    .grid-iconos-footer-3 {
-                        display: flex;
-                        grid-row: 3/4;
-                        grid-column: 3/4;
-                        justify-content: flex-start;
-                    }
-                    
-                    .grid-copy-footer {
-                        grid-column: 1/4;
-                        grid-row: 4/5;
-                        text-align: center;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: end;
-                        padding-bottom: 30px;
-                    }
+        
     /* ESTILOS HEADER*/
         header nav {
             display: inline;
@@ -249,35 +509,6 @@
                 }
 
     /* ---PORTADA INDEX----*/
-       
-        /* div para TEXTO y BOTON TIENDA  */
-            .div-texto-portada {
-                border: 2px solid blue;
-                background-color: #1818186e;
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                justify-content: center;
-                z-index: 0;
-                width: 100%;
-                 height: 550px;
-                 padding-top: 30px;
-            }
-         /* div IMAGEN fondo */
-         .div-fondo-portada {
-            /* border: 3px solid magenta;
-            background-color: #3A3B7C; */
-            position: absolute;
-            z-index: -1;
-            width: 100%;
-            height: 550px;
-            background-image: url(../img/portada-1.png);
-            background-size: 100%;
-            background-position: center center;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-            }
-           
-
 
         /* logo h1 */
                 h1 {
@@ -355,36 +586,7 @@
 
     /* SECCION ARTICULOS INDEX*/
 
-        /* MAQUETACION ARTICULOS INDEX */
-
-        .flex-articulos-index {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            margin-top: 50px;
-            height: 400px;
-            
-        }
-        .flex-articulos-item-1 {
-            width: 290px;
-            height: 350px;
-            margin: 20px;
         
-        }
-        .flex-articulos-item-2 {
-            width: 290px;
-            height: 350px;
-            margin: 20px;
-        
-        }
-        .flex-articulos-item-3 {
-            width: 290px;
-            height: 350px;
-            margin: 20px;
-
-        }
-
         /* Articulos, IMAGENES */
             .tamaño-img-art-home {
                 width: 280px;
@@ -403,137 +605,7 @@
             }
 
     /*--------------- CSS TIENDA --------------*/
-        /* MAQUETACION PORTADA TIENDA */
-            .grid-container-portada-tienda {
-                display: grid;
-                grid-template-columns: 45% 55% ;
-                grid-template-rows: 520px ;
-                justify-content: center;
-                align-items: center;
-               position: relative;
-               z-index: 0;
-               width: 100%;
-                
-                
-            }
-            .grid-item1-portada-tienda {
-                grid-column: 1/2;
-                grid-row: 1/2;
-                display: flex;
-                justify-content: center;
-                
-            }
-            .grid-item2-portada-tienda {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                grid-column: 2/3;
-                grid-row: 1/2;
-                margin-right: 10%;
-               
-
-            }
-            .color-negro-portada-tienda {
-                background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
-                width: 100%;
-                height: 100%;
-                grid-column: 1/3;
-                grid-row: 1/3;
-                position: relative;
-                z-index: -1;
-            }
-
-            .borde-blanco-tienda {
-                width: 95%;
-                height: 90%;
-                grid-column: 1/3;
-                grid-row: 1/3;
-                position: relative;
-                z-index: -1;
-                border: 1px solid white;
-                margin: 2%;
-                display: flex;
-            }
-        
-
-        /* MAQUETACION ARTICULOS TIENDA */
-
-    .flex-articulos-tienda {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-top: 50px;
-        height: 600px;
-        
-        }
-
-        .flex-articulos-item-1-tienda {
-            width: 290px;
-            height: 350px;
-            margin: 20px;
-            
-        
-        }
-        .flex-articulos-item-2-tienda {
-            width: 290px;
-            height: 350px;
-            margin: 20px;
-        
-        }
-        .flex-articulos-item-3-tienda {
-            width: 290px;
-            height: 350px;
-            margin: 20px;
-
-        }
-    /* maquetacion boton mercado libre */
-
-    /* Boton tienda -TIENDA */
-                .boton-tienda-mercado-libre {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: flex-start;
-                    width: auto;
-                    
-                    border: 1px solid #FBE405;
-                    font-family: 'Quicksand', sans-serif;
-                    color: #757575;
-                    font-size: 30px;
-                    font-weight: 500;
-                    letter-spacing: 0.2rem;
-                    background-color: #FBE405;
-                    text-decoration: none;
-                    height: auto;
-                    padding: 10px;
-                    margin: 0px ;
-                    border-radius: 30px;
-                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-                }
-                .boton-tienda-mercado-libre:hover{
-                    background-color: #dac503;
-                    border: 1px solid #dac503;
-                    --bs-btn-hover-color: #585757;
-                }
-                .boton-tienda-mercado-libre:active,
-                .boton-tienda-mercado-libre:focus, .boton-tienda-mercado-libre:disabled {
-                    --bs-btn-hover-border-color: #9d8e02;
-                    --bs-btn-active-bg: #9d8e02;
-                    --bs-btn-active-border-color: #9d8e02;
-                    --bs-btn-active-color: #484747;
-                    
-                }
-
-                .div-botones-mercado-libre{
-                    display: flex;
-                    position: relative;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 0;
-                    height: 100%;
-                    padding-top: 30px;
-                }
+       
 
 
 

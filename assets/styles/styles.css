@@ -17,7 +17,7 @@
         }
     /* MEDIA QUERY */
         /* MOVIL */
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 900px) {
 
             /* maquetacion body */
             header {
@@ -41,15 +41,38 @@
             }
         }
         /* tablet */
-        /* and (max-width: 1023px) DESKTOP!!!*/
-        @media only screen and (min-width: 481px)  {
-             /* maquetacion body */
-             header {
-                height: 170px;
+                @media only screen and (min-width: 481px) and (max-width: 1023px)  {
+                        /* maquetacion body */
+            header {
+                height: 460px;
              }  
+
              /* maquetacion header */
-             /* grid nav */
              .grid-container {
+                display: grid;
+                grid-template-rows: repeat(5,80px) ;
+                grid-template-columns: 1 fr;
+                justify-content: center;
+            }
+            .grid-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            .first-item {
+                border: 1px solid red;
+            }
+        }
+        
+         /* desktop */
+         @media only screen and (min-width: 1024px) {
+               /* maquetacion body */
+               header {
+                height: 170px;
+            }  
+            /* maquetacion header */
+            /* grid nav */
+            .grid-container {
                 display: grid;
                 grid-template-rows: 80px 80px;
                 grid-template-columns: repeat(5, 1fr);
@@ -64,18 +87,8 @@
                 grid-column: 1/6;
             }
         }
-        
-         /* desktop */
-         /* @media only screen and (min-width: 1024px) { */
-             /* maquetacion body */
-             /* header {
-                height: 170px;
-             }  */
-
-             /* maquetacion nav */
-             /* grid nav */
             
-        /* } */
+        
     /* ESTILO UNIVERSAL */
         *{ 
             margin: 0px;
@@ -482,17 +495,18 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: flex-start;
-                    width: 1100px;
+                    width: auto;
+                    
                     border: 1px solid #FBE405;
                     font-family: 'Quicksand', sans-serif;
                     color: #757575;
-                    font-size: 43px;
+                    font-size: 30px;
                     font-weight: 500;
                     letter-spacing: 0.2rem;
                     background-color: #FBE405;
                     text-decoration: none;
-                    height: 70px;
-                    padding: 0px;
+                    height: auto;
+                    padding: 10px;
                     margin: 0px ;
                     border-radius: 30px;
                     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -560,9 +574,9 @@
 
         
             .portada-tienda h3 {
-                font-weight: 400;
-                text-align: right;
-                font-size: 16px;
+                /* font-weight: 100; */
+                text-align: center;
+                font-size: 15px;
                 text-decoration:none;
                 color: white;
                 font-family: 'Playfair Display', serif;

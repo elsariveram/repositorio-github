@@ -565,6 +565,31 @@
 
 
     /*--------------- CSS HISTORIA --------------*/
+        /* MAQUETACION PORTADA HISTORIA */
+        .grid-container-portada-historia {
+            display: grid;
+            grid-template-columns: 30% 60%;
+            grid-template-rows: 520px ;
+            justify-content: center;
+            align-items: center;
+           position: relative;
+           z-index: 0;
+           width: 100%;
+        }
+        .grid-item1-portada-historia {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;      
+        }
+        .grid-item2-portada-historia {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin-right: 10%;
+        }
         /* MAQUETACION ARTICULOS HISTORIA */
 
     .flex-articulos-historia {

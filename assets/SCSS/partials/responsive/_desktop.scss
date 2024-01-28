@@ -1,0 +1,39 @@
+/* ---------------RESPONSIVE DESKTOP --------------------------*/
+//IMPORT MIXXINS
+    @import '../mixins/_mixin-estilos.scss';
+    @import '../mixins/_mixin-maquetacion';
+//IMPORT VARIABLES
+    @import '../variables/_variables';
+//IMPORT BOOTSTRAP
+    @import '../bootstrap/bootstrap';
+
+//---------------MEDIA QUERY------
+    @media only screen and (min-width: 991px) {
+//ESTILOS
+// estilo logo header
+    .logo-header-class {   
+        @include estilo-logo-header ($tamaño-logo-header-normal); //VALOR CAMBIAR
+    }
+
+//MAQUETACION HEADER
+    header {
+        @include mixin-header-maq (170px);
+    }
+    //GRID HEADER
+    .grid-container {
+        @include mixin-grid-container-header (80px 80px, repeat(5, 1fr), center);
+    }
+    .grid-item {
+        @include mixin-grid-item-header (center, center);
+    }
+    .first-item {
+        grid-column: 1/6;
+    }
+
+
+
+
+
+
+//FINAL MEDIA QUERY
+}

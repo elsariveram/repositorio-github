@@ -1,0 +1,20 @@
+//MIXIN
+
+//MAQUETACION HEADER
+    @mixin mixin-header-maq ($alto) {
+        height: $alto;
+        }
+
+    //MAQUETACION GRID HEADER
+    //NAV PARA MOVIL Y DESKTOP
+    @mixin mixin-grid-container-header ($template-rows, $template-columns, $justify) {
+        display: grid;
+        grid-template-rows: $template-rows;
+        grid-template-columns: $template-columns;
+        justify-content: $justify;
+        }
+    @mixin mixin-grid-item-header ($justify-grid-item, $align-item-grid) {
+        display: flex;
+        justify-content: $justify-grid-item;
+        align-items: $align-item-grid;
+        }

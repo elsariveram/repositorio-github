@@ -20,21 +20,20 @@
         @media only screen and (max-width: 480px) {
 
             /*  maquetacion body  MOVIL*/
-            header {
+   /*LISTO MIXIN*/ header {
                 height: auto;
              }  
-             .ocultar-nav {
-            
+  /*LISTO */  .ocultar-nav {
                 display: none;
             }
-            /* margen nav bootstrap MOVIL*/
+  /*LISTO-EXTEND */ /* margen nav bootstrap MOVIL*/
             .navbar {
                 --bs-navbar-padding-y: 0px;
                 /* position: fixed;  */
             }
 
-             /* estilo Logo  movil */
-             .logo-header-class {   
+            /* estilo Logo  movil */
+ /*LISTO MIXIN*/ .logo-header-class {   
                 font-size: 30px;
                 text-decoration:none;
                 color: white;
@@ -47,21 +46,21 @@
             
 
              /* maquetacion header MOVIL*/
-             .grid-container {
+ /*LISTO MIXIN*/.grid-container {
                 display: grid;
                 grid-template-rows: repeat(5,80px) ;
                 grid-template-columns: 1 fr;
                 justify-content: center;
             }
-            .grid-item {
+   /*LISTO MIXIN*/ .grid-item {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 }
-            .first-item {
+ /*LISTO */ .first-item {
                 border: 1px solid red;
             }
-            .ocultar-nav {
+   /*LISTO*/          .ocultar-nav {
             
                 display: none;
             }
@@ -590,7 +589,7 @@
 /*----tablet--------------------------------------------------------- */
                 @media only screen and (min-width: 481px) and (max-width: 991px)  {
                         /* maquetacion body */
-            header {
+  /*LISTO MIXIN*/   header {
                 height: auto;
              }  
              /* margen nav bootstrap TABLET*/
@@ -598,12 +597,12 @@
                 --bs-navbar-padding-y: 0px; 
                 /* position: fixed; */
             }
-             .ocultar-nav {
+   /*LISTO*/   .ocultar-nav {
             
                 display: none;
             }
              /* estilo Logo nav tablet */
-             .logo-header-class {   
+ /*LISTO MIXIN*/   .logo-header-class {   
                 font-size: 44px;
                 text-decoration:none;
                 color: white;
@@ -614,13 +613,13 @@
     
             }
              /* maquetacion header TABLET */
-             .grid-container-tablet {
+ /*LISTO MIXIN*/ .grid-container-tablet {
                 display: grid;
                 grid-template-rows: repeat(5,80px) ;
                 grid-template-columns: 1 fr;
                 justify-content: center;
             }
-            .grid-item-tablet {
+  /*LISTO MIXIN*/    .grid-item-tablet {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1141,7 +1140,7 @@
  /* -------------desktop------------------------------------------- */
          @media only screen and (min-width: 991px) {
                /* maquetacion body DESKTOP */
-               header {
+ /*LISTO MIXIN*/     header {
                 height: 170px;
             }  
             .ocultar-acordeon {
@@ -1149,7 +1148,7 @@
             }
 
              /* estilo Logo nav */
-             .logo-header-class {   
+/*LISTO MIXIN*/  .logo-header-class {   
                 font-size: 44px;
                 text-decoration:none;
                 color: white;
@@ -1161,18 +1160,18 @@
             }
                     /* maquetacion HEADER DESKTOP */
                             /* grid NAV DESKTOP*/
-                            .grid-container {
+             /*LISTO MIXIN*/   .grid-container {
                                 display: grid;
                                 grid-template-rows: 80px 80px;
                                 grid-template-columns: repeat(5, 1fr);
                                 justify-content: center;
                             }
-                            .grid-item {
+     /*listo mixin*/ .grid-item {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 }
-                            .first-item {
+     /*listo */      .first-item {
                                 grid-column: 1/6;
                             }
                             
@@ -1628,7 +1627,7 @@
             
         }
                
-            .logo-header-class span {
+ /*LISTO MIXIN*/.logo-header-class span {
             font-size: 15px;
         }
 

@@ -1,0 +1,47 @@
+//---------------MEDIA QUERY------
+/* ---------------RESPONSIVE TABLET --------------------------*/
+//IMPORT MIXXINS
+    @import '../mixins/_mixin-estilos.scss';
+    @import '../mixins/_mixin-maquetacion';
+//IMPORT VARIABLES
+    @import '../variables/_variables';
+//IMPORT BOOTSTRAP
+    @import '../bootstrap/bootstrap';
+//---------------MEDIA QUERY------
+    @media only screen and (min-width: 481px) and (max-width: 991px) {
+
+//MAQUETACION
+        //BOOTSTRAP
+        .navbar {
+            @extend .navbar-extend-tablet;
+        }
+        .color-nav {
+            @extend .color-nav-extend-tablet;
+        }
+
+    //MAQUETACION HEADER
+        header {
+            @include mixin-header-maq (auto);
+        }
+        .grid-container-tablet {
+            @include mixin-grid-container-header (repeat(5,80px), 1 fr, center);
+
+        }
+        .grid-item-tablet {
+            @include mixin-grid-item-header (center, center);
+        }
+    //OCULTAR
+        .ocultar-nav {
+            display: none;
+        }
+
+//ESTILOS
+        // estilo logo header
+        .logo-header-class {   
+            @include estilo-logo-header ($tamaño-logo-header-normal); //VALOR CAMBIAR
+        }
+
+
+
+//FINAL MEDIA QUERY
+}

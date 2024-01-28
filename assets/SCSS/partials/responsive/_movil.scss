@@ -1,0 +1,52 @@
+
+/* ---------------RESPONSIVE MOVIL --------------------------*/
+//IMPORT MIXXINS
+    @import '../mixins/_mixin-estilos.scss';
+    @import '../mixins/_mixin-maquetacion';
+//IMPORT VARIABLES
+    @import '../variables/_variables';
+//IMPORT BOOTSTRAP
+    @import '../bootstrap/_bootstrap';
+    //IMPORT MAPS
+@import '../maps/_maps';
+//---------------MEDIA QUERY MOVIL------
+    @media only screen and (max-width: 480px) {
+//MAQUETACION
+
+        //BOOTSTRAP
+        .navbar {
+           @extend .navbar-extend;
+        }
+        .color-nav {
+            @extend .color-nav-extend;
+        }
+
+    //MAQUETACION HEADER
+        header {
+            @include mixin-header-maq (auto);
+        }
+        //GRID HEADER
+        .grid-container {
+            @include mixin-grid-container-header (repeat(5,80px), 1 fr, center);
+        }
+        .grid-item {
+            @include mixin-grid-item-header (center, center);
+        }
+        .first-item {
+            border: 1px solid red;
+        }
+    //OCULTAR
+    .ocultar-nav {
+        display: none;
+    }
+
+//ESTILOS
+
+    // estilo logo header
+        .logo-header-class {   
+            @include estilo-logo-header ($tamaño-logo-header-pequeño); 
+            span {font-size: 15px;}
+        }
+
+//FINAL MEDIA QUERY
+}

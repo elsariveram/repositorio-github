@@ -1,0 +1,6 @@
+@mixin estilo-logo-header ($font-size) {
+    font-size: $font-size;
+    text-decoration:none;
+    color: white;
+    font-family: "fuente-logo";
+    }

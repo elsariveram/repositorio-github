@@ -3,3 +3,71 @@
     margin: 0px;
     border: 0px;
 }
+//  /*ESTILOS DE BODY*/
+ body {
+    background-color: #F5F2F2;
+}
+// /*ESTILOS DE FOOTER*/
+footer {
+    background-color: #1FC1CB;
+   
+}
+
+ul{
+    list-style-type: none;
+}
+// /* ESTILOS HEADER*/
+header nav {
+    display: inline;
+    background-color: #1FC1CB;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+/* ESTILO MENUS */
+.clase-menus {
+    color: #E9E8E8;
+    font-size: 32px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    list-style-type: none; 
+}
+.logo-header-class span {
+    font-size: 15px;
+}
+ /* ESTILOS FOOTER*/
+    
+
+        /* ESTILO links footer*/
+        .clase-links-footer {
+            color: #E9E8E8;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+        }
+    /* Estilo logo gatino footer */
+        .clase-logo-gatino {
+            width: 178px;
+        }
+    /* Estilo icpnos RRSS footer */
+        .clase-iconos {
+            width: 30px;
+        }
+
+    /* estilo copyright footer*/
+        footer h5 {
+            font-weight: 300;
+            color: #E9E8E8;
+            font-size: 18px;
+            text-decoration: none;
+            font-family: 'Alegreya Sans', 'Quicksand', sans-serif;
+        }
+    /* estilo hecho en Chile*/
+        footer p {
+            color: #E9E8E8;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+    

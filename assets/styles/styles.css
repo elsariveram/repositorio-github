@@ -234,8 +234,8 @@
   .grid-item1-portada-tienda {
     display: flex;
     flex-direction: row;
-    grid-column: 0.5;
-    grid-row: 0.5;
+    grid-column: 1/2;
+    grid-row: 1/2;
     justify-content: center;
     align-items: center;
     margin-right: auto;
@@ -246,8 +246,8 @@
   .grid-item2-portada-tienda {
     display: flex;
     flex-direction: column;
-    grid-column: 0.5;
-    grid-row: 0.6666666667;
+    grid-column: 1/2;
+    grid-row: 2/3;
     justify-content: center;
     align-items: center;
     margin-right: 10%;
@@ -444,7 +444,7 @@
     --bs-btn-active-color: #484747;
   }
 }
-/* ---------------RESPONSIVE TABLET caca --------------------------*/
+/* ---------------RESPONSIVE TABLET --------------------------*/
 /* Estilo para el enlace del logo movil y TABLET*/
 @media only screen and (min-width: 481px) and (max-width: 991px) {
   .ocultar-nav {
@@ -657,8 +657,8 @@
   .grid-item1-portada-tienda {
     display: flex;
     flex-direction: column;
-    grid-column: 0.5;
-    grid-row: 0.6666666667;
+    grid-column: 1/2;
+    grid-row: 2/3;
     justify-content: center;
     align-items: center;
     margin-right: 10%;
@@ -669,8 +669,8 @@
   .grid-item2-portada-tienda {
     display: flex;
     flex-direction: column;
-    grid-column: 0.5;
-    grid-row: 0.6666666667;
+    grid-column: 1/2;
+    grid-row: 2/3;
     justify-content: center;
     align-items: center;
     margin-right: 10%;
@@ -1036,8 +1036,8 @@
   .grid-item1-portada-tienda {
     display: flex;
     flex-direction: row;
-    grid-column: 0.5;
-    grid-row: 0.5;
+    grid-column: 1/2;
+    grid-row: 1/2;
     justify-content: center;
     align-items: center;
     margin-right: auto;
@@ -1048,8 +1048,8 @@
   .grid-item2-portada-tienda {
     display: flex;
     flex-direction: column;
-    grid-column: 0.6666666667;
-    grid-row: 0.5;
+    grid-column: 2/3;
+    grid-row: 1/2;
     justify-content: center;
     align-items: center;
     margin-right: 10%;
@@ -1240,6 +1240,556 @@
     --bs-btn-active-border-color: #9d8e02;
     --bs-btn-active-color: #484747;
   }
+}
+/* ---------------------ESTILOS----------------- */
+/*ESTILOS DE BODY*/
+body {
+  background-color: #F5F2F2;
+}
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid red;
+
+} */
+footer {
+  background-color: #1FC1CB;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ESTILOS HEADER*/
+header nav {
+  display: inline;
+  background-color: #1FC1CB;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+/* ESTILO MENUS */
+.clase-menus {
+  color: #E9E8E8;
+  font-size: 32px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  list-style-type: none;
+}
+
+/*LISTO MIXIN*/
+.logo-header-class span {
+  font-size: 15px;
+}
+
+/* ESTILOS FOOTER*/
+/* ESTILO links footer*/
+.clase-links-footer {
+  color: #E9E8E8;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Estilo logo gatino footer */
+.clase-logo-gatino {
+  width: 178px;
+}
+
+/* Estilo icpnos RRSS footer */
+.clase-iconos {
+  width: 30px;
+}
+
+/* estilo copyright footer*/
+footer h5 {
+  font-weight: 300;
+  color: #E9E8E8;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Alegreya Sans", "Quicksand", sans-serif;
+}
+
+/* estilo hecho en Chile*/
+footer p {
+  color: #E9E8E8;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* ---PORTADA INDEX----*/
+/*--------------- CSS TIENDA --------------*/
+/* ----ESTILOS TIENDA---- */
+/*--------------- CSS HISTORIA --------------*/
+/* MAQUETACION PORTADA HISTORIA */
+.grid-container-portada-historia {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-template-rows: 520px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.grid-item1-portada-historia {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item2-portada-historia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-right: 10%;
+}
+
+/* MAQUETACION ARTICULOS HISTORIA */
+.flex-articulos-historia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  height: 900px;
+}
+
+.flex-articulos-historia p {
+  margin-left: 20px;
+}
+
+.alguien {
+  font-size: 40px;
+  position: absolute;
+  z-index: -1;
+  text-align: right;
+  padding-left: 80px;
+}
+
+.flex-articulos-item-1-historia {
+  width: 300px;
+  height: 900px;
+  margin: 20px;
+}
+
+.flex-articulos-item-2-historia {
+  width: 300px;
+  height: 900px;
+  margin: 20px;
+}
+
+.flex-articulos-item-3-historia {
+  width: 300px;
+  height: 900px;
+  margin: 20px;
+}
+
+/* -----PORTADA HISTORIA----- */
+.portada-historia {
+  background-image: url(../img/fondo-azul.png);
+  background-size: 100%;
+  background-position: center center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*  h1 historia */
+.portada-historia h1 {
+  font-weight: 400;
+  text-align: right;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.2rem;
+}
+
+/* subt h2 historia*/
+.portada-historia h2 {
+  font-weight: 400;
+  text-align: right;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1rem;
+}
+
+.portada-historia img {
+  width: 457px;
+}
+
+/* -----ARTICULOS HISTORIA----- */
+/* IMG ARTICULOS -HISTORIA */
+.tamaño-img-art-historia {
+  width: 250px;
+  height: 280px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tamaño-img-art-historia-quique {
+  width: 200px;
+  transform: scaleX(-1);
+  margin-left: 20px;
+  margin-top: 90px;
+}
+
+/*--------------- CSS JUEGA --------------*/
+/* MAQUETACION PORTADA JUEGO */
+.grid-container-portada-juego {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  grid-template-rows: 520px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.grid-item1-portada-juego {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.grid-item2-portada-juego {
+  display: flex;
+  justify-content: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+/* MAQUETACION ARTICULOS JUEGO */
+/* GRID CONTAINER JUEGO */
+.grid-container-juego {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 600px 100px;
+  grid-template-areas: "juego juego juego" "quique texto texto";
+}
+
+/* GRID ITEM JUEGO */
+.grid-item-juego1 {
+  grid-area: juego;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-item-juego2 {
+  grid-area: quique;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.grid-item-juego3 {
+  grid-area: texto;
+}
+
+/* PORTADA JUEGA*/
+.portada-juega {
+  background-color: #6567C9;
+  background-size: 100%;
+  background-position: center center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*  h1 juega */
+.portada-juega h1 {
+  font-weight: 400;
+  text-align: right;
+  font-size: 48px;
+  text-decoration: none;
+  color: white;
+  font-family: "fuente-juego";
+  letter-spacing: 0.2rem;
+}
+
+/* subt h2 juega*/
+.portada-juega h2 {
+  font-weight: 400;
+  text-align: right;
+  font-size: 33px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1rem;
+}
+
+.portada-juega h3 {
+  font-weight: 400;
+  text-align: right;
+  font-size: 26px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1rem;
+}
+
+/* imagen portada juega */
+.portada-juega img {
+  width: 457px;
+}
+
+/* GAME */
+.tamaño-img-art-juega-quique {
+  width: 300px;
+  transform: scaleX(-1);
+  margin-left: 40px;
+}
+
+.game {
+  width: 90%;
+  height: 500px;
+  background-color: black;
+}
+
+.bg-juega {
+  background-color: #3A3B7C;
+}
+
+.text-game p {
+  color: white;
+  margin-left: 20%;
+  font-size: x-large;
+}
+
+/* ----------CONTACTO------- */
+/* MAQUETACION PORTADA CONTACTO */
+.grid-container-portada-contacto {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 1000px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  /* padding-top: 10%;
+  padding-bottom: 10%; */
+}
+
+.grid-item1-portada-contacto {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  z-index: 0;
+}
+
+.formulario-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.width-formulario {
+  width: 450px;
+}
+
+.grid-item2-portada-contacto {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-right: 20%;
+  position: relative;
+  z-index: 0;
+}
+
+.negro-fondo-formulario {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+  width: 100%;
+  height: 100%;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  position: relative;
+  z-index: -1;
+}
+
+.borde-blanco {
+  width: 90%;
+  height: 90%;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  position: relative;
+  z-index: -1;
+  border: 1px solid white;
+  margin: 5%;
+  display: flex;
+}
+
+/* Boton contacto -CONTACTO */
+.boton-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  border: 1px solid #FBE405;
+  font-family: "Quicksand", sans-serif;
+  color: #757575;
+  font-size: 43px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: #FBE405;
+  text-decoration: none;
+  height: 70px;
+  padding: 0px;
+  margin-top: 30px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* MAQUETACION - SOBRE NOSOTROS */
+.flex-sobre-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.acordeon-bootstrap-sobre {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.portada-contacto {
+  background-image: url(../img/fondo-madera.png);
+  background-size: 100%;
+  background-position: center center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*  h1 CONTACTO */
+.portada-contacto h1 {
+  font-weight: 700;
+  text-align: right;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.2rem;
+}
+
+/* subt h2 CONTACTO*/
+.portada-contacto h2 {
+  font-weight: 400;
+  text-align: right;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1rem;
+}
+
+.portada-contacto img {
+  width: 400px;
+}
+
+.portada-contacto h3 {
+  font-weight: 400;
+  text-align: right;
+  font-size: 23px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1rem;
+}
+
+/* -------------FORMULARIO------------- */
+/* titululo form */
+.titulo-form {
+  font-weight: 550;
+  text-align: left;
+  font-size: 23px;
+  text-decoration: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-right: 8%;
+}
+
+/* label form */
+.formulario {
+  font-weight: 400;
+  text-align: left;
+  font-size: 23px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1rem;
+}
+
+/* boton enviar */
+.formulario input[type=submit] {
+  font-family: "Quicksand", sans-serif;
+  color: #757575;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: #FBE405;
+  text-decoration: none;
+  border: none;
+}
+
+/* ------articulos contacto------ */
+/* texto articulos */
+.texto-articulos-contacto {
+  font-weight: 400;
+  text-align: left;
+  font-size: 24px;
+  text-decoration: none;
+  color: #757575;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* titulos articulos */
+.texto-articulos-contacto h2 {
+  font-weight: 700;
+  text-align: left;
+  font-size: 32px;
+  text-decoration: none;
+  color: #757575;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.color-preguntas {
+  background-color: #E9E8E8;
+  --bs-accordion-active-bg: #E9E8E8;
+}
+
+.color-terminos {
+  background-color: #D9D9D9;
+  --bs-accordion-active-bg: #D9D9D9;
+}
+
+.color-sobre-nosotros {
+  background-color: #F5F2F2;
+  --bs-accordion-active-bg:#F5F2F2;
 }
 
 /*# sourceMappingURL=styles.css.map */

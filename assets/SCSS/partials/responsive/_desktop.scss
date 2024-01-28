@@ -136,9 +136,9 @@
         .grid-container-portada-tienda {
             @include grid-container-portada ( 45% 55%,520px,center,center,relative,0,100%,auto);
          };
-         .grid-item1-portada-tienda { @include grid-item-portada (row,1/2,1/2,center,center,auto,auto,auto,auto);
+         .grid-item1-portada-tienda { @include grid-item-portada (row,#{'1/2'},#{'1/2'},center,center,auto,auto,auto,auto);
          };
-         .grid-item2-portada-tienda { @include grid-item-portada (column,2/3,1/2,center,center,10%,auto,auto,auto);
+         .grid-item2-portada-tienda { @include grid-item-portada (column,#{'2/3'},#{'1/2'},center,center,10%,auto,auto,auto);
           };
           //color negro portada tienda
           .color-negro-portada-tienda {     

@@ -1,35 +1,34 @@
 //IMPORT MAPS
 @import '../maps/_maps';
-//-------media query MOVIL------
-@media only screen and (max-width: 480px) {
-    
-    // margen nav bootstrap MOVIL
-    .navbar-extend { --bs-navbar-padding-y: 0px;}
 
+//------- MOVIL bootstrap------
+    // margen nav bootstrap MOVIL
+    @mixin navbar-bootstrap-mixin () {
+        --bs-navbar-padding-y: 0px;
+        }
+    
     // nav bootstrap MOVIL*/
-    .color-nav-extend {
+    @mixin color-nav-bootstrap-mixin () {
         background-color: map-get($colores, celeste);
         --bs-accordion-active-color: white;
         --bs-accordion-active-bg: map-get($colores, celeste);
         --bs-navbar-active-color: map-get($colores, amarillo-active);
-    }
+        }
+   
 
-//final media query movil
-}
 
-//-------media query tablet------
-@media only screen and (min-width: 481px) and (max-width: 991px)  {
+
+//-------tablet------
+
 
     // margen nav bootstrap TABLET
-    .navbar-extend-tablet { --bs-navbar-padding-y: 0px; }
+    @mixin navbar-bootstrap-mixin-tablet (){ --bs-navbar-padding-y: 0px; }
 
     // nav bootstrap TABLET*/
-    .color-nav-extend-tablet {
+    @mixin color-nav-bootstrap-mixin-tablet (){
         background-color: map-get($colores, celeste);
         --bs-accordion-active-color: white;
         --bs-accordion-active-bg: map-get($colores, celeste);
         --bs-navbar-active-color: map-get($colores, amarillo-active);
     }
 
-//final media query tablet
-}

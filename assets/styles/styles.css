@@ -10,30 +10,18 @@
   font-family: fuente-juego;
   src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
 }
+/*importar mapas*/
 /* ---------------RESPONSIVE MOVIL --------------------------*/
 @media only screen and (max-width: 480px) {
-  .navbar-extend, .navbar {
+  .navbar {
     --bs-navbar-padding-y: 0px;
   }
-  .color-nav-extend, .color-nav {
+  .color-nav {
     background-color: #1FC1CB;
     --bs-accordion-active-color: white;
     --bs-accordion-active-bg: map-get($colores, celeste);
     --bs-navbar-active-color: map-get($colores, amarillo-active);
   }
-}
-@media only screen and (min-width: 481px) and (max-width: 991px) {
-  .navbar-extend-tablet, .navbar {
-    --bs-navbar-padding-y: 0px;
-  }
-  .color-nav-extend-tablet, .color-nav {
-    background-color: #1FC1CB;
-    --bs-accordion-active-color: white;
-    --bs-accordion-active-bg: map-get($colores, celeste);
-    --bs-navbar-active-color: map-get($colores, amarillo-active);
-  }
-}
-@media only screen and (max-width: 480px) {
   header {
     height: auto;
   }
@@ -65,29 +53,16 @@
   }
 }
 /* ---------------RESPONSIVE TABLET --------------------------*/
-@media only screen and (max-width: 480px) {
-  .navbar-extend, .navbar {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+  .navbar {
     --bs-navbar-padding-y: 0px;
   }
-  .color-nav-extend, .color-nav {
+  .color-nav {
     background-color: #1FC1CB;
     --bs-accordion-active-color: white;
     --bs-accordion-active-bg: map-get($colores, celeste);
     --bs-navbar-active-color: map-get($colores, amarillo-active);
   }
-}
-@media only screen and (min-width: 481px) and (max-width: 991px) {
-  .navbar-extend-tablet, .navbar {
-    --bs-navbar-padding-y: 0px;
-  }
-  .color-nav-extend-tablet, .color-nav {
-    background-color: #1FC1CB;
-    --bs-accordion-active-color: white;
-    --bs-accordion-active-bg: map-get($colores, celeste);
-    --bs-navbar-active-color: map-get($colores, amarillo-active);
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 991px) {
   header {
     height: auto;
   }
@@ -113,28 +88,6 @@
   }
 }
 /* ---------------RESPONSIVE DESKTOP --------------------------*/
-@media only screen and (max-width: 480px) {
-  .navbar-extend, .navbar {
-    --bs-navbar-padding-y: 0px;
-  }
-  .color-nav-extend, .color-nav {
-    background-color: #1FC1CB;
-    --bs-accordion-active-color: white;
-    --bs-accordion-active-bg: map-get($colores, celeste);
-    --bs-navbar-active-color: map-get($colores, amarillo-active);
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 991px) {
-  .navbar-extend-tablet, .navbar {
-    --bs-navbar-padding-y: 0px;
-  }
-  .color-nav-extend-tablet, .color-nav {
-    background-color: #1FC1CB;
-    --bs-accordion-active-color: white;
-    --bs-accordion-active-bg: map-get($colores, celeste);
-    --bs-navbar-active-color: map-get($colores, amarillo-active);
-  }
-}
 @media only screen and (min-width: 991px) {
   .logo-header-class {
     font-size: 44px;

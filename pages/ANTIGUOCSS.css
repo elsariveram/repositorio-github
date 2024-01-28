@@ -66,7 +66,7 @@
             }
 
             /* nav bootstrap MOVIL*/
-        .color-nav {
+ /*LISTO extend*/ .color-nav {
             background-color: #1FC1CB;
             --bs-accordion-active-color: white;
             --bs-accordion-active-bg: #1FC1CB;
@@ -593,7 +593,7 @@
                 height: auto;
              }  
              /* margen nav bootstrap TABLET*/
-            .navbar {
+ /*LISTO extend*/ .navbar {
                 --bs-navbar-padding-y: 0px; 
                 /* position: fixed; */
             }

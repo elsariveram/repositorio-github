@@ -6,7 +6,7 @@
 //IMPORT VARIABLES
     @import '../variables/_variables';
 //IMPORT BOOTSTRAP
-    @import '../bootstrap/_bootstrap';
+    @import '../bootstrap/bootstrap';
     //IMPORT MAPS
 @import '../maps/_maps';
 //---------------MEDIA QUERY MOVIL------
@@ -15,10 +15,10 @@
 
         //BOOTSTRAP
         .navbar {
-           @extend .navbar-extend;
+            @include navbar-bootstrap-mixin;
         }
         .color-nav {
-            @extend .color-nav-extend;
+            @include color-nav-bootstrap-mixin;
         }
 
     //MAQUETACION HEADER

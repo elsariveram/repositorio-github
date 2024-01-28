@@ -13,10 +13,10 @@
 //MAQUETACION
         //BOOTSTRAP
         .navbar {
-            @extend .navbar-extend-tablet;
+            @include navbar-bootstrap-mixin-tablet;
         }
         .color-nav {
-            @extend .color-nav-extend-tablet;
+            @include color-nav-bootstrap-mixin-tablet;
         }
 
     //MAQUETACION HEADER

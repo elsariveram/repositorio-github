@@ -17,3 +17,20 @@
      font-family: $font-family;
      letter-spacing:$letter-spacing;
  }
+  //ESTILO PORTADA
+  @mixin portada-img ($width) {
+    width: $width;
+  }
+  @mixin portada-fondo ($background-image,$background-size) {
+    background-image: $background-image;
+    background-size: $background-size;
+    background-position: center center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+ //ESTILO ARTICULOS 
+ @mixin texto-articulos-global ($font-size){
+        font-family: 'Playfair Display', serif;
+        font-size: $font-size;
+        color: map-get($map: $colores, $key:gris-texto );
+        text-align: left;
+ }

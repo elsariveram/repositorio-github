@@ -1,7 +1,33 @@
-
-@mixin estilo-logo-header ($font-size) {
-    font-size: $font-size;
-    text-decoration:none;
-    color: white;
-    font-family: "fuente-logo";
+//boton global
+@mixin boton-global ($align-items,$width,$border,$font-family,$color,$font-size,$font-weight,$letter-spacing,$background-color,$height,$padding,$margin,$margin-top,$border-radius,$box-shadow) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: $align-items;
+        width: $width;
+        border: $border;
+        font-family: $font-family;
+        color: $color;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        letter-spacing: $letter-spacing;
+        background-color: $background-color;
+        text-decoration: none;
+        height: $height;
+        padding: $padding;
+        margin: $margin;
+        margin-top: $margin-top;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;               
     }
+//div-botones
+@mixin mixin-div-botones ($display,$position,$justify-content,$align-items,$z-index,$height,$padding-bottom,$padding-top){
+    display: $display;
+    position: $position;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    z-index: $z-index;
+    height: $height;
+    padding-bottom: $padding-bottom;
+    padding-top: $padding-top;
+};

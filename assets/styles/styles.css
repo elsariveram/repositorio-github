@@ -12,6 +12,7 @@
 }
 /*importar mapas*/
 /* ---------------RESPONSIVE MOVIL --------------------------*/
+/* Estilo para el enlace del logo movil y TABLET*/
 @media only screen and (max-width: 480px) {
   .navbar {
     --bs-navbar-padding-y: 0px;
@@ -19,8 +20,32 @@
   .color-nav {
     background-color: #1FC1CB;
     --bs-accordion-active-color: white;
-    --bs-accordion-active-bg: map-get($colores, celeste);
+    --bs-accordion-active-bg: map-get($map: $colores, $key:$celeste);
     --bs-navbar-active-color: map-get($colores, amarillo-active);
+  }
+  .clase-menus.nav-link {
+    color: white;
+    display: inline-block;
+    margin: 10px;
+  }
+  .clase-menus.nav-link:hover {
+    color: rgb(244, 244, 199);
+  }
+  .clase-menus.nav-link.active {
+    color: rgb(244, 244, 199);
+  }
+  .logo-header-class.navbar-brand {
+    color: white;
+    text-align: center;
+  }
+  .logo-header-class.navbar-brand:hover {
+    color: white;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-toggler {
+    border-color: white;
   }
   header {
     height: auto;
@@ -51,8 +76,39 @@
   .logo-header-class span {
     font-size: 15px;
   }
+  h1 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: "fuente-logo";
+    letter-spacing: 0px;
+  }
+  h1 span {
+    font-size: 15.3px;
+  }
+  h2 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: "fuente-logo";
+    letter-spacing: 0px;
+  }
+  h3 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0px;
+  }
 }
-/* ---------------RESPONSIVE TABLET --------------------------*/
+/* ---------------RESPONSIVE TABLET caca --------------------------*/
+/* Estilo para el enlace del logo movil y TABLET*/
 @media only screen and (min-width: 481px) and (max-width: 991px) {
   .navbar {
     --bs-navbar-padding-y: 0px;
@@ -62,6 +118,30 @@
     --bs-accordion-active-color: white;
     --bs-accordion-active-bg: map-get($colores, celeste);
     --bs-navbar-active-color: map-get($colores, amarillo-active);
+  }
+  .clase-menus.nav-link {
+    color: white;
+    display: inline-block;
+    margin: 10px;
+  }
+  .clase-menus.nav-link:hover {
+    color: rgb(244, 244, 199);
+  }
+  .clase-menus.nav-link.active {
+    color: rgb(244, 244, 199);
+  }
+  .logo-header-class.navbar-brand {
+    color: white;
+    text-align: center;
+  }
+  .logo-header-class.navbar-brand:hover {
+    color: white;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-toggler {
+    border-color: white;
   }
   header {
     height: auto;
@@ -86,15 +166,40 @@
     color: white;
     font-family: "fuente-logo";
   }
-}
-/* ---------------RESPONSIVE DESKTOP --------------------------*/
-@media only screen and (min-width: 991px) {
-  .logo-header-class {
-    font-size: 44px;
+  h1 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 80px;
     text-decoration: none;
     color: white;
     font-family: "fuente-logo";
+    letter-spacing: 0px;
   }
+  h1 span {
+    font-size: 20.3px;
+  }
+  h2 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    font-family: "fuente-logo";
+    letter-spacing: 0px;
+  }
+  h3 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0px;
+  }
+}
+/* ---------------RESPONSIVE DESKTOP --------------------------*/
+/* Estilo para el enlace del logo movil y TABLET*/
+@media only screen and (min-width: 991px) {
   header {
     height: 170px;
   }
@@ -111,6 +216,42 @@
   }
   .first-item {
     grid-column: 1/6;
+  }
+  .logo-header-class {
+    font-size: 44px;
+    text-decoration: none;
+    color: white;
+    font-family: "fuente-logo";
+  }
+  h1 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 100px;
+    text-decoration: none;
+    color: white;
+    font-family: "fuente-logo";
+    letter-spacing: 0px;
+  }
+  h1 span {
+    font-size: 33.3px;
+  }
+  h2 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: "fuente-logo";
+    letter-spacing: 0px;
+  }
+  h3 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 31px;
+    text-decoration: none;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0px;
   }
 }
 

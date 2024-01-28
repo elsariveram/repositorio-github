@@ -73,49 +73,47 @@
             --bs-navbar-active-color: rgb(244, 244, 199);
         }
         /* Estilo  enlaces nav bootstrap MOVIL*/
-                .clase-menus.nav-link {
+ /*LISTO MIXIN*/ .clase-menus.nav-link {
                     color: white;
                 }
                 
-                .clase-menus.nav-link:hover {
+  /*listo anidado*/  .clase-menus.nav-link:hover {
                     color: rgb(244, 244, 199) ; 
                 }
                 
-                .clase-menus.nav-link.active {
+  /*listo clase*/ .clase-menus.nav-link.active {
                     color: rgb(244, 244, 199);
                 }
                 /* Estilo para el enlace del logo */
-                .logo-header-class.navbar-brand {
+ /*listo mixin*/ .logo-header-class.navbar-brand {
                     color:white;  
                     text-align: center;
                 }
                 
                 
-                .logo-header-class.navbar-brand:hover {
+/*listo anidado*/ .logo-header-class.navbar-brand:hover {
                     color:white; 
                 }
 
-                .navbar-nav {
+  /*listo clase*/ .navbar-nav {
                     text-align: center;
 
                 }
                 
                 
-                .clase-menus.nav-link {
+  /*LISTO MIXIN*/ .clase-menus.nav-link {
                     display: inline-block; 
                     margin: 0 10px; 
                 }
 
                 /* Estilo para el fondo del botón de navegación MOVIL */
-                .navbar-toggler{
+ /*listo clase*/ .navbar-toggler{
                     border-color:white;
-
-
-                }
+                };
 
             /* MAQUETACION PORTADA INDEX - MOVIL */
                 /* logo h1 MOVIL*/
-                h1 {
+/*listo mixin*/   h1 {
                     font-weight: 100;
                     text-align: center;
                     font-size: 50px;
@@ -123,11 +121,11 @@
                     color: white;
                     font-family: "fuente-logo";
                 }
-                h1 span {
+/*listo anidado*/    h1 span {
                     font-size: 15.3px;
                 }
                 /* subt h2 MOVIL*/
-                h2 {
+/*listo mixin*/   h2 {
                     font-weight: 100;
                     text-align: center;
                     font-size: 25px;
@@ -136,7 +134,7 @@
                     font-family: "fuente-logo";
                 }
                 /* subt h3 MOVIL */
-                h3 {
+/*listo mixin*/  h3 {
                     font-weight: 200;
                     text-align: center;
                     font-size: 15px;
@@ -468,7 +466,6 @@
                 justify-content: center;
                 align-items: center;
                 width: auto;
-                
                 border: 1px solid #FBE405;
                 font-family: 'Quicksand', sans-serif;
                 color: #757575;
@@ -626,54 +623,54 @@
                 }
 
                 /* nav bootstrap  TABLET*/
-        .color-nav {
+ /*LISTO MIXIN*/  .color-nav {
             background-color: #1FC1CB;
             --bs-accordion-active-color: white;
             --bs-accordion-active-bg: #1FC1CB;
             --bs-navbar-active-color: rgb(244, 244, 199);
         }
         /* Estilo  enlaces nav bootstrap TABLET */
-                .clase-menus.nav-link {
+ /*LISTO MIXIN*/.clase-menus.nav-link {
                     color: white;
                 }
                 
-                .clase-menus.nav-link:hover {
+ /*LISTO ANIDADO*/ .clase-menus.nav-link:hover {
                     color: rgb(244, 244, 199) ; 
                 }
                 
-                .clase-menus.nav-link.active {
+/*listo clase*/  .clase-menus.nav-link.active {
                     color: rgb(244, 244, 199);
                 }
                 /* Estilo para el enlace del logo TABLET*/
-                .logo-header-class.navbar-brand {
+ /*listo mixin*/  .logo-header-class.navbar-brand {
                     color:white;  
                     text-align: center;
                 }
                 
                 
-                .logo-header-class.navbar-brand:hover {
+/*listo anidado*/.logo-header-class.navbar-brand:hover {
                     color:white; 
                 }
 
-                .navbar-nav {
+ /*listo clase*/ .navbar-nav {
                     text-align: center;
                 }
                 
                 
-                .clase-menus.nav-link {
+ /*LISTO MIXIN*/  .clase-menus.nav-link {
                     display: inline-block; 
                     margin: 0 10px; 
                 }
 
                 /* Estilo para el fondo del botón de navegación TABLET */
-                .navbar-toggler{
+ /*listo clase*/  .navbar-toggler{
                     border-color:white;
 
 
                 }
             /* estilos PORTADA INDEX TABLET*/
                 /* logo h1 TABLET*/
-                h1 {
+/*listo mixin*/   h1 {
                     font-weight: 100;
                     text-align: center;
                     font-size: 80px;
@@ -681,11 +678,11 @@
                     color: white;
                     font-family: "fuente-logo";
                 }
-                h1 span {
+/*listo anidado*/ h1 span {
                     font-size: 20.3px;
                 }
         /* subt h2 TABLET*/
-                h2 {
+ /*listo mixin*/  h2 {
                     font-weight: 100;
                     text-align: center;
                     font-size: 40px;
@@ -694,7 +691,7 @@
                     font-family: "fuente-logo";
                 }
         /* subt h3TABLET */
-                h3 {
+/*listo mixin*/    h3 {
                     font-weight: 400;
                     text-align: center;
                     font-size: 21px;
@@ -1264,7 +1261,7 @@
 
                         /* ESTILOS COLORES PORTADA DESKTOP */
                 /* logo h1 DESKTOP */
-                h1 {
+ /*LISTO MIXIN*/   h1 {
                     font-weight: 100;
                     text-align: center;
                     font-size: 100px;
@@ -1272,11 +1269,11 @@
                     color: white;
                     font-family: "fuente-logo";
                 }
-                h1 span {
+/*listi¿o anidado*/  h1 span {
                     font-size: 33.3px;
                 }
                 /* subt h2 DESKTOP */
-                h2 {
+/*listo mixin*/  h2 {
                     font-weight: 100;
                     text-align: center;
                     font-size: 50px;
@@ -1285,7 +1282,7 @@
                     font-family: "fuente-logo";
                 }
                 /* subt h3 DESKTOP */
-                h3 {
+/*listo mixin*/   h3 {
                     font-weight: 400;
                     text-align: center;
                     font-size: 31px;

@@ -3,6 +3,8 @@
 //IMPORT MIXXINS
     @import '../mixins/_mixin-estilos.scss';
     @import '../mixins/_mixin-maquetacion';
+    @import '../mixins/_mixin-botones';
+    
 //IMPORT VARIABLES
     @import '../variables/_variables';
 //IMPORT BOOTSTRAP
@@ -20,6 +22,25 @@
         .color-nav {
             @include color-nav-bootstrap-mixin;
         }
+        .clase-menus.nav-link {
+            @include menus-nav-link-bootstrap-mixin (inline-block,10px);
+            &:hover{color: map-get($map: $colores, $key:amarillo-active )}
+        }
+        .clase-menus.nav-link.active {
+            color: map-get($map: $colores, $key:amarillo-active);
+        }
+        //  /* Estilo para el enlace del logo*/
+        .logo-header-class.navbar-brand {
+            @include logo-header-navbar-brand-bootstrap-mixin;
+            &:hover {color:white;}
+        };
+        .navbar-nav {
+            text-align: center;
+        };
+        //  /* Estilo para el fondo del botón de navegación MOVIL */
+         .navbar-toggler{
+            border-color:white;
+        };
 
     //MAQUETACION HEADER
         header {
@@ -46,7 +67,18 @@
         .logo-header-class {   
             @include estilo-logo-header ($tamaño-logo-header-pequeño); 
             span {font-size: 15px;}
-        }
+        };
+    //estilo h1 index
+        h1 {
+            @include estilo-h1-global (100, center,50px,white,"fuente-logo",0px);
+            span {font-size: 15.3px;};
+        };
+        h2 {
+            @include estilo-h1-global (100, center,25px,white,"fuente-logo",0px);
+        };
+        h3 {
+            @include estilo-h1-global (200, center,15px,white,('Quicksand', sans-serif),0px);
+        };
 
 //FINAL MEDIA QUERY
 }

@@ -1,8 +1,9 @@
 //---------------MEDIA QUERY------
-/* ---------------RESPONSIVE TABLET --------------------------*/
+/* ---------------RESPONSIVE TABLET caca --------------------------*/
 //IMPORT MIXXINS
     @import '../mixins/_mixin-estilos.scss';
     @import '../mixins/_mixin-maquetacion';
+    @import '../mixins/_mixin-botones';
 //IMPORT VARIABLES
     @import '../variables/_variables';
 //IMPORT BOOTSTRAP
@@ -14,32 +15,61 @@
         //BOOTSTRAP
         .navbar {
             @include navbar-bootstrap-mixin-tablet;
-        }
+        };
         .color-nav {
             @include color-nav-bootstrap-mixin-tablet;
-        }
-
+        };
+        .clase-menus.nav-link {
+            @include menus-nav-link-bootstrap-mixin (inline-block,10px);
+            &:hover{color: map-get($map: $colores, $key:amarillo-active )};
+        };
+        .clase-menus.nav-link.active {
+            color: map-get($map: $colores, $key:amarillo-active);
+        };
+        //  /* Estilo para el enlace del logo TABLET*/
+        .logo-header-class.navbar-brand {
+            @include logo-header-navbar-brand-bootstrap-mixin;
+            &:hover {color:white;}
+        };
+        .navbar-nav {
+            text-align: center;
+        };
+        //  /* Estilo para el fondo del botón de navegación MOVIL */
+        .navbar-toggler{
+            border-color:white;
+        };
     //MAQUETACION HEADER
         header {
             @include mixin-header-maq (auto);
-        }
+        };
         .grid-container-tablet {
             @include mixin-grid-container-header (repeat(5,80px), 1 fr, center);
 
-        }
+        };
         .grid-item-tablet {
             @include mixin-grid-item-header (center, center);
-        }
+        };
     //OCULTAR
         .ocultar-nav {
             display: none;
-        }
+        };
 
 //ESTILOS
         // estilo logo header
         .logo-header-class {   
             @include estilo-logo-header ($tamaño-logo-header-normal); //VALOR CAMBIAR
-        }
+        };
+         //estilo h1 index
+         h1 {
+             @include estilo-h1-global (100, center,80px,white,"fuente-logo",0px);
+             span {font-size: 20.3px;};
+            };
+         h2 {
+            @include estilo-h1-global (100, center,40px,white,"fuente-logo",0px);
+            };
+         h3 {
+             @include estilo-h1-global (400, center,21px,white,('Quicksand', sans-serif),0px);
+            };
 
 
 

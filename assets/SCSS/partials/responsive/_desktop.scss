@@ -2,6 +2,7 @@
 //IMPORT MIXXINS
     @import '../mixins/_mixin-estilos.scss';
     @import '../mixins/_mixin-maquetacion';
+    @import '../mixins/_mixin-botones';
 //IMPORT VARIABLES
     @import '../variables/_variables';
 //IMPORT BOOTSTRAP
@@ -9,11 +10,6 @@
 
 //---------------MEDIA QUERY------
     @media only screen and (min-width: 991px) {
-//ESTILOS
-// estilo logo header
-    .logo-header-class {   
-        @include estilo-logo-header ($tamaño-logo-header-normal); //VALOR CAMBIAR
-    }
 
 //MAQUETACION HEADER
     header {
@@ -30,7 +26,22 @@
         grid-column: 1/6;
     }
 
-
+//ESTILOS
+    // estilo logo header
+    .logo-header-class {   
+        @include estilo-logo-header ($tamaño-logo-header-normal); //VALOR CAMBIAR
+    }
+    //estilo h1 index
+    h1 {
+    @include estilo-h1-global (100, center,100px,white,"fuente-logo",0px);
+    span {font-size: 33.3px;};
+    };
+    h2 {
+        @include estilo-h1-global (100, center,50px,white,"fuente-logo",0px);
+        };
+    h3 {
+         @include estilo-h1-global (400, center,31px,white,('Quicksand', sans-serif),0px);
+           };
 
 
 

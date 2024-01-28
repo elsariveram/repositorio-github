@@ -11,11 +11,21 @@
     @mixin color-nav-bootstrap-mixin () {
         background-color: map-get($colores, celeste);
         --bs-accordion-active-color: white;
-        --bs-accordion-active-bg: map-get($colores, celeste);
+        --bs-accordion-active-bg: map-get($map: $colores, $key:$celeste);
         --bs-navbar-active-color: map-get($colores, amarillo-active);
         }
-   
+   //Estilo  enlaces nav bootstrap MOVIL
+    @mixin menus-nav-link-bootstrap-mixin ( $display, $margin) {
+        color: white;
+        display: $display; 
+        margin: $margin; 
 
+     }
+     /* Estilo para el enlace del logo movil y TABLET*/
+     @mixin logo-header-navbar-brand-bootstrap-mixin (){
+        color:white;  
+        text-align: center;
+    }
 
 
 //-------tablet------

@@ -24,9 +24,10 @@
             @include color-nav-bootstrap-mixin-tablet;
         };
         .clase-menus.nav-link {
-            @include menus-nav-link-bootstrap-mixin (inline-block,10px);
-            &:hover{color: map-get($map: $colores, $key:amarillo-active )};
-        };
+            @include menus-nav-link-bootstrap-mixin (inline-block, 10px);
+            &:hover {
+                color: map-get($map: $colores, $key: amarillo-active); 
+            }}
         .clase-menus.nav-link.active {
             color: map-get($map: $colores, $key:amarillo-active);
         };

@@ -1,4 +1,13 @@
- /* ESTILO UNIVERSAL */
+//IMPORT MAPS
+@import '../maps/maps';
+//IMPORT VARIABLES
+@import '../variables/_variables';
+//IMPORT MIXXINS
+@import '../mixins/_mixin-estilos.scss';
+@import '../mixins/_mixin-maquetacion';
+@import '../mixins/_mixin-botones';
+
+/* ESTILO UNIVERSAL */
  *{ 
     margin: 0px;
     border: 0px;
@@ -31,6 +40,14 @@ header nav {
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     list-style-type: none; 
+    &:hover { 
+        color: map-get($map: $colores, $key:amarillo-active);
+        font-size: 34px;
+    };
+    &:active {
+        color: map-get($map: $colores, $key:amarillo-active-2);
+        font-size: 33px
+    }
 }
 .logo-header-class span {
     font-size: 15px;
@@ -44,6 +61,15 @@ header nav {
             font-size: 20px;
             text-decoration: none;
             font-family: 'Quicksand', sans-serif;
+            &:hover, &:focus { 
+                color: map-get($map: $colores, $key:amarillo-active);
+                font-size: 22px;
+            };
+            &:active {
+                color: map-get($map: $colores, $key:amarillo-active-2);
+                font-size: 21px
+            };
+
         }
     /* Estilo logo gatino footer */
         .clase-logo-gatino {
@@ -52,22 +78,29 @@ header nav {
     /* Estilo icpnos RRSS footer */
         .clase-iconos {
             width: 30px;
-        }
+            &:hover { 
+                width: 32px;
+            }
+            
+        };
 
     /* estilo copyright footer*/
-        footer h5 {
-            font-weight: 300;
-            color: #E9E8E8;
-            font-size: 18px;
-            text-decoration: none;
-            font-family: 'Alegreya Sans', 'Quicksand', sans-serif;
-        }
-    /* estilo hecho en Chile*/
-        footer p {
-            color: #E9E8E8;
-            font-size: 20px;
-            text-decoration: none;
-            font-family: 'Quicksand', sans-serif;
-        }
+        footer {
+            h5 {
+                font-weight: 300;
+                color: #E9E8E8;
+                font-size: 18px;
+                text-decoration: none;
+                font-family: 'Alegreya Sans', 'Quicksand', sans-serif;
+            };
+            p {
+                color: #E9E8E8;
+                font-size: 20px;
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+            };
+        };
+        
+  
 
     

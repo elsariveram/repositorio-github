@@ -7,6 +7,8 @@
     @import '../variables/_variables';
 //IMPORT BOOTSTRAP
     @import '../bootstrap/bootstrap';
+//IMPORT MAPS
+@import '../maps/maps';
 
 //---------------MEDIA QUERY------
     @media only screen and (min-width: 991px) {
@@ -100,11 +102,14 @@
 //MAQUETACION ARTICULOS INDEX
             //IMAGENES-ARTICULOS-INDEX
             .tamaño-img-art-home {
-                @include mixin-maqueta-img-articulos (280px, auto)
+                @include mixin-maqueta-img-articulos (280px, auto);
+                &:hover {
+                    width: 290px;
+                };
                 };
               //IMAGENES-ARTICULOS-TIENDA
               .tamaño-img-art-tienda{ 
-                @include mixin-maqueta-img-articulos (auto, 250px)
+                @include mixin-maqueta-img-articulos (auto, 250px);
                };
             //MAQUETACION FLEX ARTICULOS INDEX 
             .flex-articulos-index {
@@ -155,15 +160,28 @@
     // estilo logo header
     .logo-header-class {   
         @include estilo-logo-header ($tamaño-logo-header-normal); //VALOR CAMBIAR
-    }
+        &:hover, &:focus { 
+            font-size: 45px;
+        };
+        &:active {
+            font-size: 44px
+        };
+    };
+    .header-active {
+          color: map-get($map: $colores, $key:amarillo-active );
+      }
+   
     //estilo h1 index
+   
     h1 {
     @include estilo-h1-global (100, center,100px,white,"fuente-logo",0px);
     span {font-size: 33.3px;};
     };
+   
     h2 {
         @include estilo-h1-global (100, center,50px,white,"fuente-logo",0px);
         };
+        
     h3 {
          @include estilo-h1-global (400, center,31px,white,('Quicksand', sans-serif),0px);
            };
@@ -205,11 +223,16 @@
             &:hover{
                 background-color: map-get($colores,morado-claro);
                 border: 1px solid map-get($colores,morado-claro);
+                width: 360px;
+                height: 72px;
+                font-size: 49px;
+
+
             } 
-            &:active,&:focus,&:disabled{
-                --bs-btn-hover-border-color: map-get($colores,morado-oscuro);
-                    --bs-btn-active-bg: map-get($colores,morado-oscuro);
-                    --bs-btn-active-border-color: map-get($colores,morado-oscuro)
+            &:active, &:focus, &:disabled {
+                --bs-btn-hover-border-color:  #4d4e95;
+                --bs-btn-active-bg:  #4d4e95;
+                --bs-btn-active-border-color:  #4d4e95;
             }
         }
         //BOTON-COMPRAR-MERCADO-LIBRE
@@ -219,12 +242,15 @@
                 background-color: #dac503;
                 border: 1px solid #dac503;
                 --bs-btn-hover-color: #585757;
+                font-size: 32px;
+
             };
             &:active,&:focus,&:disabled{
                 --bs-btn-hover-border-color: #9d8e02;
                 --bs-btn-active-bg: #9d8e02;
                 --bs-btn-active-border-color: #9d8e02;
                 --bs-btn-active-color: #484747;
+                font-size: 30px;
             };  
         };
 
@@ -562,9 +588,9 @@
         height: 70px;
         padding: 0px;
         margin-top: 30px;
-        
         border-radius: 30px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
     }
   
 
@@ -657,6 +683,22 @@
             background-color: #FBE405;
             text-decoration: none;
             border: none;
+            &:hover{
+                font-size: 50px;
+                background-color: #dac503;
+                height: 71px;
+                width: 501px;
+                
+            };
+            &:active{
+                font-size: 48px;
+                background-color: #dac503;
+                height: 70px;
+                width: 500px;
+               
+            };
+            
+
         }
 
 /* ------articulos contacto------ */

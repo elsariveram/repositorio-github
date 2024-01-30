@@ -36,6 +36,14 @@ header nav {
   font-family: "Quicksand", sans-serif;
   list-style-type: none;
 }
+.clase-menus:hover {
+  color: rgb(244, 244, 199);
+  font-size: 34px;
+}
+.clase-menus:active {
+  color: rgb(215, 215, 174);
+  font-size: 33px;
+}
 
 .logo-header-class span {
   font-size: 15px;
@@ -49,6 +57,14 @@ header nav {
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
 }
+.clase-links-footer:hover, .clase-links-footer:focus {
+  color: rgb(244, 244, 199);
+  font-size: 22px;
+}
+.clase-links-footer:active {
+  color: rgb(215, 215, 174);
+  font-size: 21px;
+}
 
 /* Estilo logo gatino footer */
 .clase-logo-gatino {
@@ -59,6 +75,9 @@ header nav {
 .clase-iconos {
   width: 30px;
 }
+.clase-iconos:hover {
+  width: 32px;
+}
 
 /* estilo copyright footer*/
 footer h5 {
@@ -68,8 +87,6 @@ footer h5 {
   text-decoration: none;
   font-family: "Alegreya Sans", "Quicksand", sans-serif;
 }
-
-/* estilo hecho en Chile*/
 footer p {
   color: #E9E8E8;
   font-size: 20px;
@@ -476,9 +493,9 @@ footer p {
     border: 1px solid #5c5db3;
   }
   .boton-tienda:active, .boton-tienda:focus, .boton-tienda:disabled {
-    --bs-btn-hover-border-color: map-get($colores,morado-oscuro);
-    --bs-btn-active-bg: map-get($colores,morado-oscuro);
-    --bs-btn-active-border-color: map-get($colores,morado-oscuro) ;
+    --bs-btn-hover-border-color: #4d4e95;
+    --bs-btn-active-bg: #4d4e95;
+    --bs-btn-active-border-color: #4d4e95;
   }
   .boton-tienda-mercado-libre {
     display: flex;
@@ -1330,9 +1347,9 @@ footer p {
     border: 1px solid #5c5db3;
   }
   .boton-tienda:active, .boton-tienda:focus, .boton-tienda:disabled {
-    --bs-btn-hover-border-color: map-get($colores,morado-oscuro);
-    --bs-btn-active-bg: map-get($colores,morado-oscuro);
-    --bs-btn-active-border-color: map-get($colores,morado-oscuro) ;
+    --bs-btn-hover-border-color: #4d4e95;
+    --bs-btn-active-bg: #4d4e95;
+    --bs-btn-active-border-color: #4d4e95;
   }
   .boton-tienda-mercado-libre {
     display: flex;
@@ -1911,6 +1928,9 @@ footer p {
     height: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
+  .tamaño-img-art-home:hover {
+    width: 290px;
+  }
   .tamaño-img-art-tienda {
     width: auto;
     height: 250px;
@@ -2024,6 +2044,15 @@ footer p {
     text-decoration: none;
     color: white;
     font-family: "fuente-logo";
+  }
+  .logo-header-class:hover, .logo-header-class:focus {
+    font-size: 45px;
+  }
+  .logo-header-class:active {
+    font-size: 44px;
+  }
+  .header-active {
+    color: rgb(244, 244, 199);
   }
   h1 {
     font-weight: 100;
@@ -2144,11 +2173,14 @@ footer p {
   .boton-tienda:hover {
     background-color: #5c5db3;
     border: 1px solid #5c5db3;
+    width: 360px;
+    height: 72px;
+    font-size: 49px;
   }
   .boton-tienda:active, .boton-tienda:focus, .boton-tienda:disabled {
-    --bs-btn-hover-border-color: map-get($colores,morado-oscuro);
-    --bs-btn-active-bg: map-get($colores,morado-oscuro);
-    --bs-btn-active-border-color: map-get($colores,morado-oscuro) ;
+    --bs-btn-hover-border-color: #4d4e95;
+    --bs-btn-active-bg: #4d4e95;
+    --bs-btn-active-border-color: #4d4e95;
   }
   .boton-tienda-mercado-libre {
     display: flex;
@@ -2175,12 +2207,14 @@ footer p {
     background-color: #dac503;
     border: 1px solid #dac503;
     --bs-btn-hover-color: #585757;
+    font-size: 32px;
   }
   .boton-tienda-mercado-libre:active, .boton-tienda-mercado-libre:focus, .boton-tienda-mercado-libre:disabled {
     --bs-btn-hover-border-color: #9d8e02;
     --bs-btn-active-bg: #9d8e02;
     --bs-btn-active-border-color: #9d8e02;
     --bs-btn-active-color: #484747;
+    font-size: 30px;
   }
   .grid-container-portada-historia {
     display: grid;
@@ -2562,6 +2596,18 @@ footer p {
     text-decoration: none;
     border: none;
   }
+  .formulario input[type=submit]:hover {
+    font-size: 50px;
+    background-color: #dac503;
+    height: 71px;
+    width: 501px;
+  }
+  .formulario input[type=submit]:active {
+    font-size: 48px;
+    background-color: #dac503;
+    height: 70px;
+    width: 500px;
+  }
   /* ------articulos contacto------ */
   /* texto articulos */
   .texto-articulos-contacto {
@@ -2593,6 +2639,127 @@ footer p {
   .color-sobre-nosotros {
     background-color: #F5F2F2;
     --bs-accordion-active-bg:#F5F2F2;
+  }
+}
+h1 {
+  animation: fadeIn 2s forwards;
+  opacity: 0;
+}
+
+h2 {
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+h3 {
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.div-botones {
+  animation: fadeIn 2s forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+img {
+  animation: fadeIn 2s forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+
+p {
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.div-botones-mercado-libre {
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.formulario {
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.portada-tienda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fondo-madera.png);
+  background-size: cover;
+  animation: scaleEffect 10s forwards;
+  z-index: -2;
+  background-repeat: no-repeat;
+}
+
+.portada-tienda {
+  overflow: hidden;
+}
+
+.div-fondo-portada::before {
+  content: "";
+  position: absolute;
+  background-position: center center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/portada-1.png);
+  background-size: 100%;
+  animation: scaleEffect 10s forwards;
+  z-index: -2;
+}
+
+.div-fondo-portada {
+  overflow: hidden;
+}
+
+.portada-contacto::before {
+  content: "";
+  position: absolute;
+  background-position: center center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fondo-madera.png);
+  background-size: cover;
+  animation: scaleEffect 10s forwards;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.portada-contacto {
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scaleEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

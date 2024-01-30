@@ -254,9 +254,9 @@
                 border: 1px solid map-get($colores,morado-claro);
             } 
             &:active,&:focus,&:disabled{
-                --bs-btn-hover-border-color: map-get($colores,morado-oscuro);
-                    --bs-btn-active-bg: map-get($colores,morado-oscuro);
-                    --bs-btn-active-border-color: map-get($colores,morado-oscuro)
+                --bs-btn-hover-border-color:  #4d4e95;
+                    --bs-btn-active-bg:  #4d4e95;
+                    --bs-btn-active-border-color:  #4d4e95;
             }
         }
         //BOTON-COMPRAR-MERCADO-LIBRE

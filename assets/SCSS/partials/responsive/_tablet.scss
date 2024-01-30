@@ -6,6 +6,8 @@
     @import '../mixins/_mixin-botones';
 //IMPORT VARIABLES
     @import '../variables/_variables';
+//IMPORT MAPS
+@import '../maps/maps';
 //IMPORT BOOTSTRAP
     @import '../bootstrap/bootstrap';
 //---------------MEDIA QUERY------
@@ -240,9 +242,9 @@
                 border: 1px solid map-get($colores,morado-claro);
             }
             &:active,&:focus,&:disabled{
-                --bs-btn-hover-border-color: map-get($colores,morado-oscuro);
-                    --bs-btn-active-bg: map-get($colores,morado-oscuro);
-                    --bs-btn-active-border-color: map-get($colores,morado-oscuro)
+                --bs-btn-hover-border-color:  #4d4e95;
+                    --bs-btn-active-bg:  #4d4e95;
+                    --bs-btn-active-border-color:  #4d4e95;
             }
         };
         //BOTON-COMPRAR-MERCADO-LIBRE
@@ -617,6 +619,7 @@
             background-color: #FBE405;
             text-decoration: none;
             border: none;
+            
         }
 
 /* ------articulos contacto------ */

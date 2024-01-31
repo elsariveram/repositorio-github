@@ -1,0 +1,306 @@
+ //-----------ESTILOS COLORES Y FUENTES TABLET ------
+    //IMPORT MIXXINS
+    @import '../../mixins/mixin-estilos';
+    @import '../../mixins/_mixin-maquetacion';
+    @import '../../mixins/_mixin-botones';
+
+    //IMPORT VARIABLES
+    @import '../../variables/_variables';
+    //IMPORT BOOTSTRAP
+    @import '../../bootstrap/bootstrap';
+    //IMPORT MAPS
+    @import '../../maps/_maps';
+
+//ESTILOS
+    //  /* Estilo para el enlace del logo TABLET*/
+    .logo-header-class.navbar-brand {
+        @include logo-header-navbar-brand-bootstrap-mixin;
+        &:hover {color:white;}
+    };
+    .navbar-nav {
+        text-align: center;
+    };
+    //  /* Estilo para el fondo del botón de navegación MOVIL */
+    .navbar-toggler{
+        border-color:white;
+    };
+
+    //ESTILOS
+        // estilo logo header
+        .logo-header-class {   
+            @include estilo-logo-header ($tamaño-logo-header-normal); //VALOR CAMBIAR
+        };
+         //estilo h1 index
+         h1 {
+             @include estilo-h1-global (100, center,80px,white,"fuente-logo",0px);
+             span {font-size: 20.3px;};
+            };
+         h2 {
+            @include estilo-h1-global (100, center,40px,white,"fuente-logo",0px);
+            };
+         h3 {
+             @include estilo-h1-global (400, center,21px,white,('Quicksand', sans-serif),0px);
+            };
+        //estilo texto Articulos
+            .texto-articulos{
+                @include texto-articulos-global (20px);
+                p{
+                    padding-top: 10px;
+                 }
+            };
+        //estilo portada TIENDA
+        .portada-tienda {
+            @include portada-fondo (url(../img/fondo-madera.png),100%);
+            img {
+                @include portada-img (300px)
+            };
+            h1 {
+                @include estilo-h1-global (700, right,35px,white,('Playfair Display', serif),0.2rem);
+            }
+            h2 {
+                @include estilo-h1-global (400, right,18px,white,('Playfair Display', serif),0.1rem);
+            };
+            h3 {
+                @include estilo-h1-global (auto, center,15px,white,('Playfair Display', serif),0.1rem);
+            };
+
+        };
+
+/* -----PORTADA HISTORIA----- */
+    .portada-historia {
+        background-image: url(../img/fondo-azul.png);
+        background-size: auto 100%;
+        background-position: center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+        h1 {
+            font-weight: 700;
+            text-align: right;
+            font-size: 34px;
+            text-decoration:none;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.2rem;
+        };
+        h2 {
+            font-weight: 400;
+            text-align: center;
+            font-size: 20px;
+            text-decoration:none;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1rem;
+            justify-content: center;
+            align-items: center;
+            };
+        img {
+                width: 350px;
+            };
+    };
+
+ /* -----ARTICULOS HISTORIA----- */
+
+    /* IMG ARTICULOS -HISTORIA */
+    .tamaño-img-art-historia {
+        width: 250px;
+        height: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .tamaño-img-art-historia-quique {
+        width: 200px;
+        transform: scaleX(-1);
+        margin-left: 20px;
+        margin-top: 90px;
+    };
+
+    /*--------------- CSS JUEGA --------------*/
+    /* ESTILOS PORTADA JUEGA*/
+    .portada-juega {
+        background-color: #6567C9;
+        background-size: 100%;
+        background-position: center center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        h1 {
+            font-weight: 400;
+            text-align: center;
+            font-size: 33px;
+            text-decoration:none;
+            color: yellow;
+            font-family: "fuente-juego";
+            letter-spacing: 0.2rem;
+        };
+        h2 {
+            font-weight: 400;
+            text-align: center;
+            font-size: 25px;
+            text-decoration:none;
+            color: yellow;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1rem;
+            justify-content: center;
+            align-items: center;
+        };
+        h3 {
+            font-weight: 400;
+            text-align: center;
+            font-size: 15px;
+            text-decoration:none;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1rem;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
+        };
+        img {
+            width: 250px;
+            
+        }
+    };
+    
+        /* GAME AREA */
+        .tamaño-img-art-juega-quique {
+            width: 220px;
+            transform: scaleX(-1);
+            margin-left: 4px;
+            
+        }
+        .game {
+            width: 90%;
+            height: 390px;
+            background-color: black;
+    
+            
+        }
+        .bg-juega {
+            background-color: #3A3B7C;
+        }
+        .text-game p{
+            color: white;
+            margin-left: 20%;
+            font-size: 22px;
+        }
+
+
+
+ //------CONTACTO.HTML------
+
+        .portada-contacto {
+            background-image: url(../img/fondo-madera.png);
+            background-size: 100%;
+            background-position: center center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            h1 {
+                font-weight: 700;
+                text-align: center;
+                font-size: 40px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 0.2rem;
+                margin-top: 15%;
+            };
+            h2 {
+                font-weight: 400;
+                text-align: center;
+                font-size: 20px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 0.1rem;
+                margin-left: 5%;
+            };
+            img {
+                width: 200px;
+                margin-left: 30%;
+                position: relative;
+            z-index: -1;
+            };
+            h3 {
+                font-weight: 400;
+                text-align: left;
+                font-size: 18px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 0.1rem;
+                margin-top: 10%;
+                margin-left: 10%;
+            }
+        }
+
+        /* -------------FORMULARIO------------- */
+        /* titululo form */
+            .titulo-form {
+                font-weight: 550;
+                text-align: center;
+                font-size: 18px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Quicksand', sans-serif;
+                letter-spacing: 0.1rem;
+                
+            }
+        /* label form */
+            .formulario {
+                font-weight: 400;
+                text-align: left;
+                font-size: 18px;
+                text-decoration:none;
+                color: white;
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 0.1rem;
+            }
+        /* boton enviar */
+            .formulario input[type="submit"] {
+            
+                font-family: 'Quicksand', sans-serif;
+                color: #757575;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 0.2rem;
+                background-color: #FBE405;
+                text-decoration: none;
+                border: none;
+                
+            }
+
+        /* ------articulos contacto------ */
+        /* texto articulos */
+            .texto-articulos-contacto {
+                font-weight: 400;
+                text-align: left;
+                font-size: 18px;
+                text-decoration:none;
+                color: #757575;
+                font-family: 'Quicksand', sans-serif;
+                h2{
+                    font-weight: 700;
+                    text-align: left;
+                    font-size: 20px;
+                    text-decoration:none;
+                    color: #757575;
+                    font-family: 'Quicksand', sans-serif;
+                    letter-spacing: 0.1rem;
+                } 
+                
+            }
+
+            .color-preguntas {
+                background-color: #E9E8E8;
+                --bs-accordion-active-bg: #E9E8E8;
+
+            }
+
+            .color-terminos {
+                background-color: #D9D9D9;
+                --bs-accordion-active-bg: #D9D9D9;
+
+            }
+
+            .color-sobre-nosotros {
+                background-color: #F5F2F2;
+                --bs-accordion-active-bg:#F5F2F2;
+
+            }

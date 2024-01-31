@@ -1,0 +1,357 @@
+  //-------------MAQUETACION-------------
+        //IMPORT MIXXINS
+        @import '../../mixins/mixin-estilos';
+        @import '../../mixins/_mixin-maquetacion';
+        @import '../../mixins/_mixin-botones';
+
+        //IMPORT VARIABLES
+        @import '../../variables/_variables';
+        //IMPORT BOOTSTRAP
+        @import '../../bootstrap/bootstrap';
+        //IMPORT MAPS
+        @import '../../maps/_maps';
+
+// maquetacion
+
+    //OCULTAR
+    .ocultar-acordeon {
+        display: none;  
+    }
+
+    //MAQUETACION HEADER
+    header {
+        @include mixin-header-maq (170px);
+    }
+    //GRID HEADER
+    .grid-container {
+        @include mixin-grid-container-header (80px 80px, repeat(5, 1fr), center);
+    }
+    .grid-item {
+        @include mixin-grid-item-header (center, center);
+    }
+    .first-item {
+        grid-column: 1/6;
+    };
+    //MAQUETACION FOOTER
+    .footer-grid-container {
+        @include mixin-grid-container-footer ($grid-template-rows:330px,$grid-template-columns:1fr 1fr 1fr);
+        };
+        .grid-lista-1-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items:flex-start;
+            margin-left: 50px;
+        };
+        .grid-footer-fabricacion {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        .grid-lista-central-footer {
+            display: grid;
+            grid-template-rows: repeat(4,auto);
+            grid-template-columns: 1fr 1fr 1fr;
+            ;
+        }
+        .logo-grid-footer {
+            grid-column: 1/4;
+            grid-row: 1/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-iconos-footer-1 {
+            display: flex;
+            grid-row: 3/4;
+            grid-column: 1/2;
+            justify-content: flex-end;
+        }
+        .grid-iconos-footer-2 {
+            display: flex;
+            grid-row: 3/4;
+            grid-column: 2/3;
+            justify-content: center;
+        }
+        .grid-iconos-footer-3 {
+            display: flex;
+            grid-row: 3/4;
+            grid-column: 3/4;
+            justify-content: flex-start;
+        }
+        
+        .grid-copy-footer {
+            grid-column: 1/4;
+            grid-row: 4/5;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-bottom: 30px;
+        }
+    // MAQUETACION PORTADA INDEX  
+    .div-texto-portada {
+        @include mixin-maqueta-portada (column,center,0,100%,550px,30px);
+        }
+    //div img fondo portada
+    .div-fondo-portada {
+        @include mixin-maqueta-portada-img-fondo (-1,100%,550px,url(../img/portada-1.png),100%,center center)
+            };
+    //MAQUETACION ARTICULOS INDEX
+            //IMAGENES-ARTICULOS-INDEX
+            .tamaño-img-art-home {
+                @include mixin-maqueta-img-articulos (280px, auto);
+                &:hover {
+                    width: 290px;
+                };
+                };
+            //IMAGENES-ARTICULOS-TIENDA
+            .tamaño-img-art-tienda{ 
+                @include mixin-maqueta-img-articulos (auto, 250px);
+            };
+            //MAQUETACION FLEX ARTICULOS INDEX 
+            .flex-articulos-index {
+                @include maqueta-flex-articulos (row,wrap,space-evenly,auto,50px,400px);
+            };
+                .flex-articulos-item-1 {
+                    @include maqueta-flex-articulos-item (290px,350px,20px)
+            };
+            .flex-articulos-item-2 {
+                @include maqueta-flex-articulos-item (290px,350px,20px)
+            };
+            .flex-articulos-item-3 {
+            @include maqueta-flex-articulos-item (290px,350px,20px)
+            };
+            //MAQUETACION FLEX ARTICULOS TIENDA.HTML
+            .flex-articulos-tienda {
+                @include maqueta-flex-articulos (row,wrap,space-evenly,auto,50px,600px);
+                };
+            .flex-articulos-item-1-tienda {
+                    @include maqueta-flex-articulos-item(290px,350px,20px)
+                    };
+            .flex-articulos-item-2-tienda {
+                        @include maqueta-flex-articulos-item(290px,350px,20px)
+                        };
+            .flex-articulos-item-3-tienda {
+                            @include maqueta-flex-articulos-item(290px,350px,20px)
+                            };
+            // MAQUETACION PORTADA TIENDA 
+        .grid-container-portada-tienda {
+            @include grid-container-portada ( 45% 55%,520px,center,center,relative,0,100%,auto);
+        };
+        .grid-item1-portada-tienda { @include grid-item-portada (row,#{'1/2'},#{'1/2'},center,center,auto,auto,auto,auto);
+        };
+        .grid-item2-portada-tienda { @include grid-item-portada (column,#{'2/3'},#{'1/2'},center,center,10%,auto,auto,auto);
+        };
+
+        //color negro portada tienda
+        .color-negro-portada-tienda {     
+            @include color-negro-portada-tienda-mixin;
+          };
+           //borde blanco portada
+           .borde-blanco-tienda {
+            @include borde-blanco-portada-mixin;
+            };
+
+// /*--------------- CSS HISTORIA --------------*/
+    //     /* MAQUETACION PORTADA HISTORIA */
+    .grid-container-portada-historia {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        grid-template-rows: 520px ;
+        justify-content: center;
+        align-items: center;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    }
+    .grid-item1-portada-historia {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;      
+    }
+    .grid-item2-portada-historia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-right: 10%;
+    }
+
+    /* MAQUETACION ARTICULOS HISTORIA */
+    .flex-articulos-historia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    height: 900px;
+    }
+    .flex-articulos-historia p {
+        margin-left: 20px; 
+    }
+    .alguien {
+        font-size: 40px;
+        position: absolute;
+        z-index: -1;
+        text-align: right;
+        padding-left: 80px;
+    }
+
+    .flex-articulos-item-1-historia {
+        width: 300px;
+        height: 900px;
+        margin: 20px;
+
+    }
+    .flex-articulos-item-2-historia {
+        width: 300px;
+        height: 900px;
+        margin: 20px;
+    }
+
+    .flex-articulos-item-3-historia {
+        width: 300px;
+        height: 900px;
+        margin: 20px;
+
+    }
+
+ /*--------------- CSS JUEGA --------------*/
+    /* MAQUETACION PORTADA JUEGO */
+    .grid-container-portada-juego {
+        display: grid;
+        grid-template-columns: 60% 30%;
+        grid-template-rows: 520px ;
+        justify-content: center;
+        align-items: center;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    }
+    .grid-item1-portada-juego {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        margin-right: 10%;    
+        margin-left: 10%;
+    }
+    .grid-item2-portada-juego {
+        display: flex;
+        justify-content: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+            /* MAQUETACION ARTICULOS JUEGO */
+                /* GRID CONTAINER JUEGO */
+                .grid-container-juego {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 600px 100px;
+                    grid-template-areas:
+                        'juego juego juego'
+                        'quique texto texto';
+                }
+                
+                /* GRID ITEM JUEGO */
+                .grid-item-juego1 {
+                    grid-area: juego;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                
+                .grid-item-juego2 {
+                    grid-area: quique;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-self: flex-end;
+                    justify-content: flex-end;
+                }
+                
+                .grid-item-juego3 {
+                    grid-area: texto;
+                }
+/* ----------CONTACTO------- */
+    /* MAQUETACION PORTADA CONTACTO */
+    .grid-container-portada-contacto {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1000px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+        width: 100%;
+       
+    }
+    .grid-item1-portada-contacto {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        z-index: 0;
+    }
+    .formulario-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .width-formulario {
+        width: 450px;
+    }
+    .grid-item2-portada-contacto {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-right: 20%;
+        position: relative;
+        z-index: 0;
+    }
+
+    .negro-fondo-formulario {
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+        width: 100%;
+        height: 100%;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        position: relative;
+        z-index: -1;
+    }
+    .borde-blanco {
+        width: 90%;
+        height: 90%;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        position: relative;
+        z-index: -1;
+        border: 1px solid white;
+        margin: 5%;
+        display: flex;
+    }
+
+/* MAQUETACION - SOBRE NOSOTROS */
+    .flex-sobre-nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+    }
+    .acordeon-bootstrap-sobre{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 90%;
+    }

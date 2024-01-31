@@ -1,0 +1,399 @@
+//-----------MAQUETACION GRID-FLEX-BOOTSTRAP------
+    //IMPORT MIXXINS
+    @import '../../mixins/mixin-estilos';
+    @import '../../mixins/_mixin-maquetacion';
+    @import '../../mixins/_mixin-botones';
+
+    //IMPORT VARIABLES
+    @import '../../variables/_variables';
+    //IMPORT BOOTSTRAP
+    @import '../../bootstrap/bootstrap';
+    //IMPORT MAPS
+    @import '../../maps/_maps';
+
+
+//MAQUETACION
+        //OCULTAR
+        .ocultar-nav {
+            display: none;
+        }
+        //BOOTSTRAP
+        .navbar {
+            @include navbar-bootstrap-mixin;
+        }
+        .color-nav {
+            @include color-nav-bootstrap-mixin;
+        }
+        .clase-menus.nav-link {
+            @include menus-nav-link-bootstrap-mixin (inline-block,10px);
+            &:hover{color: map-get($map: $colores, $key:amarillo-active )}
+        }
+        .clase-menus.nav-link.active {
+            color: map-get($map: $colores, $key:amarillo-active);
+        }
+
+        
+    //MAQUETACION HEADER
+    header {
+        @include mixin-header-maq (auto);
+    }
+    //GRID HEADER
+    .grid-container {
+        @include mixin-grid-container-header (repeat(5,80px), 1 fr, center);
+    }
+    .grid-item {
+        @include mixin-grid-item-header (center, center);
+    }
+    .first-item {
+        border: 1px solid red;
+    };
+//MAQUETACION FOOTER
+    .footer-grid-container {
+    @include mixin-grid-container-footer ($grid-template-rows:repeat(4,auto),$grid-template-columns:100%);
+    };
+    .grid-lista-1-links {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items:center;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                padding-top: 30px;
+    };
+    .grid-footer-fabricacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 4/5 ;
+    }
+    .grid-lista-central-footer {
+        display: grid;
+        grid-template-rows: repeat(4,auto);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column: 1/2;
+        grid-row: 2/3 ;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .logo-grid-footer {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-iconos-footer-1 {
+        display: flex;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-content: flex-end;
+    }
+    .grid-iconos-footer-2 {
+        display: flex;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        justify-content: center;
+    }
+    .grid-iconos-footer-3 {
+        display: flex;
+        grid-row: 2/3;
+        grid-column: 3/4;
+        justify-content: flex-start;
+    }
+    
+    .grid-copy-footer {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        
+    };
+
+// MAQUETACION PORTADA INDEX  
+.div-texto-portada {
+@include mixin-maqueta-portada (column,center,0,100%,300px,20px);
+}
+    //div img fondo portada
+ .div-fondo-portada {
+@include mixin-maqueta-portada-img-fondo (-1,100%,300px,url(../img/portada-1.png),100%,center center)
+    };
+
+ //MAQUETACION ARTICULOS INDEX
+        //IMAGENES-ARTICULOS-INDEX
+        .tamaño-img-art-home {
+        @include mixin-maqueta-img-articulos (250px, auto)
+        }
+        //IMAGENES-ARTICULOS-TIENDA
+        .tamaño-img-art-tienda{ 
+         @include mixin-maqueta-img-articulos (auto, 200px)
+        }
+        
+
+        //MAQUETACION FLEX ARTICULOS INDEX 
+        .flex-articulos-index {
+            @include maqueta-flex-articulos (column,wrap,space-evenly,center,30px,auto);
+        }
+        .flex-articulos-item-1 {
+             @include maqueta-flex-articulos-item (290px,350px,0px)
+        };
+        .flex-articulos-item-2 {
+            @include maqueta-flex-articulos-item (290px,350px,0px)
+       };
+       .flex-articulos-item-3 {
+        @include maqueta-flex-articulos-item (290px,350px,0px)
+        };
+        //MAQUETACION FLEX ARTICULOS TIENDA.HTML
+        .flex-articulos-tienda {
+        @include maqueta-flex-articulos (column,wrap,space-evenly,center,50px,auto);
+        };
+        .flex-articulos-item-1-tienda {
+        @include maqueta-flex-articulos-item(290px,auto,20px)
+        };
+        .flex-articulos-item-2-tienda {
+            @include maqueta-flex-articulos-item(290px,auto,20px)
+            };
+        .flex-articulos-item-3-tienda {
+                @include maqueta-flex-articulos-item(290px,auto,20px)
+                };
+        // MAQUETACION PORTADA TIENDA 
+        .grid-container-portada-tienda {
+                @include grid-container-portada ( 1fr,auto auto,center,center,relative,0,100%,auto);
+                };
+
+        .grid-item1-portada-tienda { @include grid-item-portada (row,#{'1/2'},#{'1/2'},center,center,auto,auto,30px,auto);
+                };
+        .grid-item2-portada-tienda { @include grid-item-portada (column,#{'1/2'},#{'2/3'},center,center,10%,5%,auto,10%);
+                };
+                //color negro portada tienda
+                .color-negro-portada-tienda {     
+                    @include color-negro-portada-tienda-mixin;
+                };
+                //borde blanco portada
+                .borde-blanco-tienda {
+                @include borde-blanco-portada-mixin;
+                };
+// /*--------------- CSS HISTORIA.html --------------*/
+            //     /* MAQUETACION PORTADA HISTORIA */        
+            .grid-container-portada-historia {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+                justify-content: center;
+                align-items: center;
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            }
+            .grid-item1-portada-historia {
+                flex-direction: row;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+                padding-top: 30px;     
+            }
+            .grid-item2-portada-historia {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                margin-right: 10%;
+                margin-left: 5%;
+                padding-bottom: 10%;
+            }
+            /* MAQUETACION ARTICULOS HISTORIA */
+            .flex-articulos-historia {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 50px;
+                height: auto;
+                p {
+                    margin-left: 20px; 
+                }
+                }
+                .alguien {
+                    font-size: 40px;
+                    position: absolute;
+                    z-index: -1;
+                    text-align: right;
+                    padding-left: 80px;
+                }
+
+                .flex-articulos-item-1-historia {
+                    width: 290px;
+                    height: auto;
+                    margin: 20px;
+                
+                }
+                .flex-articulos-item-2-historia {
+                    width: 290px;
+                    height: auto;
+                    margin: 20px;
+                }
+
+                .flex-articulos-item-3-historia {
+                    width: 290px;
+                    height: auto;
+                    margin: 20px;
+
+                }
+    //------MAQUETACION JUEGO-------            
+         /* MAQUETACION PORTADA JUEGO */
+            .grid-container-portada-juego {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto ;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 0;
+                width: 100%;
+            }
+            .grid-item1-portada-juego {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;
+                padding-top: 30px;   
+            }
+            .grid-item2-portada-juego {
+                display: flex;
+                justify-content: center;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 10%;
+                margin-left: 5%;
+                padding-bottom: 10%;
+            }
+            /* MAQUETACION ARTICULOS JUEGO */
+                /* GRID CONTAINER JUEGO */
+                .grid-container-juego {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 80% 20%;
+                    grid-template-areas:
+                        'juego juego juego'
+                        'quique texto texto';
+                }
+                
+                /* GRID ITEM JUEGO */
+                .grid-item-juego1 {
+                    grid-area: juego;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                
+                .grid-item-juego2 {
+                    grid-area: quique;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-self: flex-end;
+                    justify-content: flex-end;
+                }
+                
+                .grid-item-juego3 {
+                    grid-area: texto;
+                }
+/* ----------CONTACTO------- */
+        /* MAQUETACION PORTADA CONTACTO */
+        .grid-container-portada-contacto {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            height: auto;
+        }
+        .grid-item1-portada-contacto {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 0;
+        }
+        .formulario-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            margin-left:10% ;
+            
+        }
+        .width-formulario {
+            width: 85%;
+        }
+        .grid-item2-portada-contacto {
+            flex-direction: column;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            margin-right: 10%;
+            margin-left: 5%;
+            position: relative;
+            z-index: 0;
+            padding-bottom: 10%;
+            align-items: center;
+            
+        }
+
+        .negro-fondo-formulario {
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+            width: 100%;
+            height: 100%;
+            grid-column: 1/3;
+            grid-row: 1/3;
+            position: relative;
+            z-index: -1;
+        }
+        .borde-blanco {
+            width: 90%;
+            height: 90%;
+            grid-column: 1/3;
+            grid-row: 1/3;
+            position: relative;
+            z-index: -1;
+            border: 1px solid white;
+            margin: 5%;
+            display: flex;
+        }
+
+        /* MAQUETACION - SOBRE NOSOTROS */
+        .flex-sobre-nosotros {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 0;
+        }
+        .acordeon-bootstrap-sobre{
+            margin-top: 100px;
+            margin-bottom: 30px;
+            width: 90%;
+        }
